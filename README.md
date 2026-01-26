@@ -74,8 +74,8 @@ root_directory/
   - .pdb for atomic models
   - .json for metadata files
 3. Post-processed maps should include the method name as a suffix:
-  - CryoTEN, EMReady, EMReady2, DeepEMhancer: *<entry_id>_full_<method>.mrc* (e.g., EMD-0004_full_cryoten.mrc).
-  - LocScale, LocScale-, LocSpiral: *<entry_id>_<method>.mrc* (e.g., EMD-0004_locscale.mrc).
+  - CryoTEN, EMReady, EMReady2, DeepEMhancer: *<entry_id>_full_method.mrc* (e.g., EMD-0004_full_cryoten.mrc).
+  - LocScale, LocScale-, LocSpiral: *<entry_id>_method.mrc* (e.g., EMD-0004_locscale.mrc).
 4. All files must reside in the proper folder as shown above; the scripts automatically use this structure to locate and match files.
 
 Following these conventions ensures maps_metrics_files.py and other scripts can correctly pair maps with models and metadata, enabling reproducible metric computation.
@@ -92,7 +92,7 @@ Researchers can reuse these scripts to evaluate their own methods under the same
     ├── maps_metrics_files.py                # python script for metric computation
     ├── parser_def.py                        # compress into a CSV
     ├── sept2024_train_val_test_split.json   # JSON file defining dataset split 
-    └── rutas.txt.   #defined routes
+    └── rutas.txt   						 # defined routes
 </pre>
 
 
@@ -100,12 +100,13 @@ Researchers can reuse these scripts to evaluate their own methods under the same
 This directory stores all results generated during the evaluation:
 - **Phenix-derived metrics** (map-model agreement and global quality metrics).
 - **Q-score results** (global and per-residue scores).
+
 All auxiliary files obtained internally during metric computation, such as intermediate Phenix outputs, temporary maps, or model-map alignment files, are stored separately in *extra_directory* to keep the output clean and organized. 
 
 <pre>
 ├── output_directory/
 │   ├── phenix_metrics            # Phenix-derived evaluation metrics
-│   ├── qscore_metrics            # Q-score results
+│   └── qscore_metrics            # Q-score results
 ├── all_metrics_test_paper.csv    # CSV containing the metrics
 └── extra_directory/
     ├── phenix_intermediates/
@@ -137,13 +138,13 @@ This script requires MapQ for the computation of Q-scores, which provide global 
 The script supports the following post-processing methods:
 - CryoTEN
 - EMReady (emr)
- EMReady2 (emr2)
+- EMReady2 (emr2)
 - DeepEMhancer (dem1)
 - LocScale
 - LocScale-
 - LocSpiral
 
-These methods correspond to the post-processing approaches evaluated in the associated publication. Brief installation instructions and GitHub links are detailed in *Section 3.Installation of post-processing methods in /docs/Installation Guide.pdf.* 
+These methods correspond to the post-processing approaches evaluated in the associated publication. Brief installation instructions are detailed in *Section 3.Installation of post-processing methods in /docs/Installation Guide.pdf.* 
 
 **Note:** This repository does not include the software for these methods. In order to generate new post-processed maps, you must first install each method on your system. Once installed, the script will automatically run the method and generate the corresponding post-processed maps, following the expected folder structure (see the *Dataset Organization* section). 
 
@@ -172,7 +173,7 @@ Each entry must follow the naming conventions described earlier, and the metadat
 
 **About routes.txt**
 
-The file *routes.txt* contains the absolute paths to all required directories, including the dataset root folder, the subfolders for each-post-processing method, the dataset split JSON file, and the output directories used during metric computation.
+The file *routes.txt* contains the absolute paths to all required directories, including the dataset root folder, the subfolders for each-post-processing method, the dataset split JSON file, and the output directory used during metric computation.
 Since directory structures vary across systems, you must edit this file and replace the example paths with the correct locations on your machine.
 If the paths in *routes.txt* are incorrect or incomplete, the script will not be able to locate the maps or metadata and will terminate with missing-paths errors.
 
@@ -188,14 +189,14 @@ Below you can find a description of all available flags.
 - all → to compute metrics for all available methods. 
 - other → to compute metrics for custom/unlisted methods. The path of the custom maps (*output_directory_other*) must be added in the file: *routes.txt*
 
--p → path to the directory containing the file with all dataset paths (rutas.txt).
+-p → path to the directory containing the file with all dataset paths (*routes.txt*).
 
 **Optional flags**
 
 --refine → if set, the script will:
 - run phenix.real_space_refine
 - Then run phenix.mtriage and phenix.emringer to compute detailed metrics.
-- 
+  
 Use this if refinement is required before metric extraction.
 
 -n → limits the number of maps to process.
@@ -209,28 +210,28 @@ Use this if refinement is required before metric extraction.
 **Example of use:**
 - Refine:
 <pre>
-python maps_metrics_files.py -m emr2 --refine - nw 6 -p /path/to/routes.txt
+python maps_metrics_files.py -m emr2 --refine -nw 6 -p /path/to/routes.txt
 </pre>
 
 - Not refine:
 <pre>
-  python maps_metrics_files.py -m emr2 - nw 1 -p /path/to/routes.txt
+  python maps_metrics_files.py -m emr2 -nw 1 -p /path/to/routes.txt
 </pre>
 
 ### 5. Choosing the dataset split
-The evaluation pipeline relies on a JSON file that defines the dataset partitions (train, val, and test). The path to this JSON file must be specified inside rutas.txt, using the entry:
+The evaluation pipeline relies on a JSON file that defines the dataset partitions (train, val, and test). The path to this JSON file must be specified inside *routes.txt*, using the entry:
 
 <pre>
 json_file_path = /path/to/partitions.json
 </pre>
 
-This JSON file contains the list of maps included in each split, and the script maps_metrics_files.py, by default, uses the test partition to compute the Phenix and Q-score metrics.
+This JSON file contains the list of maps included in each split, and the script *maps_metrics_files.py*, by default, uses the test partition to compute the Phenix and Q-score metrics.
 
 If you wish to compute metrics for additional maps —such as training or validation maps, or any custom subset— you may either:
 - add those maps to the existing partitions in the JSON file.
 - create a new key (e.g., “custom”), containing the names of the desired maps.
 
-In either case, you must update the line in maps_metrics_files.py where the selected partition is loaded. Inside the script, you will find a clearly marked comment indicating where the selection occurs:
+In either case, you must update the line in *maps_metrics_files.py* where the selected partition is loaded. Inside the script, you will find a clearly marked comment indicating where the selection occurs:
 
 <pre>
 # >>> USER: change 'test' here if you want to process a different split
@@ -239,14 +240,16 @@ In either case, you must update the line in maps_metrics_files.py where the sele
 ### 6. Important execution notes
 
 **Interruptions and incomplete metric files**
-If the script is interrupted before a metric finishes computing, the output may be created but incomplete. Since the script checks whether a metric file already exists, incomplete files will not be overwritten. 
-To recompute a metric you must delete the incomplete file, Y EL AUXILIAR GENERADO and then run the script again.
+
+If the script is interrupted before a metric finishes computing, the output file may be created but remain incomplete. Since the script checks whether a metric file already exists, incomplete files will not be overwritten. 
+
+In addition, the auxiliary file generated by *phenix.real_space_refine* should only be deleted when an interruption has occurred and the metric file is incomplete. If it is not removed, rerunning the script will prevent the metrics from being generated. In this situation, both the incomplete output file and its auxiliary file must be removed before rerunning the script.
 
 
 ## CSV generation script
 *parser_def.py*
 
-The parser_def.py script, located in /code_py_path/, is responsible for consolidating all metrics computed by maps_metrics_files.py into a single CSV file. It collects metric files from the corresponding output_directory and combines them into a structurable table for easier analysis and comparison.
+The parser_def.py script, located in /code_py_path/, is responsible for consolidating all metrics computed by *maps_metrics_files.py* into a single CSV file. It collects metric files from the corresponding *output_directory* and combines them into a structurable table for easier analysis and comparison.
 
 ### Running the script
 
@@ -256,7 +259,7 @@ It accepts the following command-line arguments.
 
 -o → name of the CSV file to generate (do not include the .csv extension).
 
--p → path to the directory containing the file with all dataset paths (rutas.txt).
+-p → path to the directory containing the file with all dataset paths (*routes.txt*).
 
 **Example of use:**
 
@@ -315,6 +318,8 @@ By default, the script generates boxplots for all post-processing methods presen
 
 To exclude a method from the boxplots, simply add its identifier (e.g., locscale, locspiral, emr, etc) to the *filtered_columns* list. All metrics associated with the specified methods will be automatically removed from the plots and from the corresponding statistical summaries.
 
+**Note:** *filtered_columns* must always be defined as a tuple. When excluding a single method, include a trailing comma (e.g.,("emr",)). Defining it as a string (e.g.,("emr")) will cause matching errors. When excluding multiple methods, list them as strings within the tuple (e.g., ("emr", "locspiral", "locscale")). Use an empty tuple () if no methods should be excluded.
+
 In addition to the plots, the script outputs a JSON file containing summary statistics —including the mean, median, and first and third quartiles— for each metric and post-processing method.
 
 
@@ -323,7 +328,7 @@ In addition to the plots, the script outputs a JSON file containing summary stat
 
 The script *qscore_residue.py* is used to compute and visualize per-residue Q-score profiles for a single cryo-EM map. It generates a plot showing how Q-scores vary along the protein sequence, allowing local assessment of map-model agreement at the residue level.
 
-The input .txt file used in this script is generated as part of the Q-score computation performed by maps_metrics_files.py and is stored in the qscores_extra directory.
+The input .txt file used in this script is generated as part of the Q-score computation performed by *maps_metrics_files.py* and is stored in the qscores_extra directory in *extra_directory*.
 
 ### Running the script
 It accepts the following command-line arguments.
@@ -345,13 +350,13 @@ archive → path to the input .txt file containing the per-residue Q-scores.
 
 <pre>
 python3 qscore_residue.py 
-/path/to/extra_directory/qscores_extra/6huo_cleaned_real_space_refined_000.pdb__Q__EMD-0282_full_cryoten.mrc_All.txt --output_dir /path/to/plots_metrics_residues/
+/path/to/extra_directory/qscores_extra/8a1d_cleaned_real_space_refined_000.pdb__Q__EMD-15072_full_cryoten.mrc_All.txt --output_dir /path/to/plots_metrics_residues/
 </pre>
 
 - Not refine:
 <pre>
 python3 qscore_residue.py 
-/path/to/extra_directory/qscores_extra/6huo.pdb__Q__EMD-0282_full_cryoten.mrc_All.txt --output_dir /path/to/plots_metrics_residues/ --not_refine
+/path/to/extra_directory/qscores_extra/8a1d.pdb__Q__EMD-15072_full_cryoten.mrc_All.txt --output_dir /path/to/plots_metrics_residues/ --not_refine
 </pre>
 
 These commands generate per-residue Q-score plots for the selected map, saving them in the directory defined by *--output_dir*
