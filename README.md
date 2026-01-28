@@ -5,11 +5,11 @@ Precomputed metrics (Phenix and Q-scores) are also included, along with a unifie
 
 ## Dataset access (Harvard Dataverse)
 The full dataset described in this work is publicly available on Harvard Dataverse across two separate deposits due to storage size constraints. Together, these repositories contain all maps, models, metadata, and precomputed metrics:
-- [Dataverse 1](INSERTAR LINK)
-- [Dataverse 2](INSERTAR LINK)
+- [Dataverse 1](https://dataverse.harvard.edu/dataverse/curated_dataset_cryoEM_map_postprocessing_info)
+- [Dataverse 2](https://dataverse.harvard.edu/dataverse/curated_dataset_cryoEM_postprocessing_methods_metrics)
 
 Additionally, the following DOI corresponds to the informational dataset, which details the organization and content of each dataset, provides complementary usage notes, and includes links to each dataset across the two Dataverse deposits listed above. Please refer to the description section of this dataset for full details:
-DOI: AÑADIR DOI
+DOI:[10.7910/DVN/YI79GU](https://doi.org/10.7910/DVN/YI79GU)
 
 
 ## Data Organization
@@ -67,6 +67,22 @@ root_directory/
     └── <entry_id>.json
 </pre>
 
+
+**Important note regarding method naming:**
+
+In this repository and in the associated Harvard Dataverse deposits, the following folder and method names are used:
+
+- **dem1** → DeepEMhancer outputs
+- **locscale-** → LocScale- outputs
+
+However, in the associated publication, these methods are referred to using simplified notation: 
+
+- *dem1* is denoted as **dem** in the paper
+- *locscale-* is denoted as **locscale*** in the paper
+
+This difference is purely notational and does not reflect any change in methodology or data content. All results reported in the paper cprres`pmding to **dem** amd **locscale** directly map to the *dem1* and *locscale-* folders provided in this repository and in the Dataverse datasets. 
+
+
 **Rules and guidelines**
 1. General rule: use *<entry_id>* as the base filename for all maps and metadata files (average maps, half-maps, and post-processed maps), except for PDB files, which use the PDB number (e.g., 6giq.pdb).
 2. File extensions must match the type:
@@ -78,7 +94,8 @@ root_directory/
   - LocScale, LocScale-, LocSpiral: *<entry_id>_method.mrc* (e.g., EMD-0004_locscale.mrc).
 4. All files must reside in the proper folder as shown above; the scripts automatically use this structure to locate and match files.
 
-Following these conventions ensures maps_metrics_files.py and other scripts can correctly pair maps with models and metadata, enabling reproducible metric computation.
+Following these conventions ensures *maps_metrics_files.py* and other scripts can correctly pair maps with models and metadata, enabling reproducible metric computation.
+
 
 
 ### 2. Evaluation workflow and scripts → *code_py_path*
@@ -136,6 +153,7 @@ This script requires MapQ for the computation of Q-scores, which provide global 
 
 ### 2. Supported methods
 The script supports the following post-processing methods:
+
 - CryoTEN
 - EMReady (emr)
 - EMReady2 (emr2)
@@ -145,6 +163,8 @@ The script supports the following post-processing methods:
 - LocSpiral
 
 These methods correspond to the post-processing approaches evaluated in the associated publication. Brief installation instructions are detailed in *Section 3.Installation of post-processing methods in /docs/Installation Guide.pdf.* 
+
+**Note on naming:** In this repository and Dataverse, DeepEMhancer results are stored under *dem1*, and LocScale- results under *locscale-*. In the paper, these methods are referred to as *dem* and *locscale** respectively. Both notations correspond to the same data and methods. 
 
 **Note:** This repository does not include the software for these methods. In order to generate new post-processed maps, you must first install each method on your system. Once installed, the script will automatically run the method and generate the corresponding post-processed maps, following the expected folder structure (see the *Dataset Organization* section). 
 
@@ -185,7 +205,7 @@ Below you can find a description of all available flags.
 **Required flags:**
 
 -m → type of map to process. Must be one of the predefined dataset folders:
- - average_maps, locscale, locscale-, locspiral, dem1, emr, emr2, cryoten 
+- average_maps, locscale, locscale-, locspiral, dem1, emr, emr2, cryoten 
 - all → to compute metrics for all available methods. 
 - other → to compute metrics for custom/unlisted methods. The path of the custom maps (*output_directory_other*) must be added in the file: *routes.txt*
 
@@ -264,7 +284,7 @@ It accepts the following command-line arguments.
 **Example of use:**
 
 <pre>
-python3 parser_def.py -o all_metrics_test -p routes.txt
+python3 parser_def.py -o all_metrics_test_paper -p routes.txt
 </pre>
   
 This will create a CSV file named all_metrics_test.csv in the directory specified by *output_folder_csv* inside *routes.txt*. The resulting file will include all Phenix and Q-score metrics for the maps referenced in the JSON split file inside *routes.txt*
@@ -305,7 +325,7 @@ It accepts the following command-line arguments.
 **Example of use:**
 
 <pre>
-python3 box_plot_stats.py --file_path /path/to/all_metrics_test.csv --output_dir /path/to/plots_dir/  --stats_file stats_complete.json --mode non_matches
+python3 box_plot_stats.py --file_path /path/to/all_metrics_test_paper.csv --output_dir /path/to/plots_dir/  --stats_file stats_complete.json --mode non_matches
 </pre>
 
 **Additional notes:**
