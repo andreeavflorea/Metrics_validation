@@ -80,7 +80,7 @@ However, in the associated publication, these methods are referred to using simp
 - *dem1* is denoted as **dem** in the paper
 - *locscale-* is denoted as **locscale*** in the paper
 
-This difference is purely notational and does not reflect any change in methodology or data content. All results reported in the paper cprres`pmding to **dem** amd **locscale** directly map to the *dem1* and *locscale-* folders provided in this repository and in the Dataverse datasets. 
+This difference is purely notational and does not reflect any change in methodology or data content. All results reported in the paper corresponding to **dem** amd **locscale** directly map to the *dem1* and *locscale-* folders provided in this repository and in the Dataverse datasets. 
 
 
 **Rules and guidelines**
