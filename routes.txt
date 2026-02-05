@@ -1,0 +1,28 @@
+# Defines the root directory where the subdirectories are located
+
+root_directory = '/media/andreea/DATA1/dem2_data_andreea'
+output_directory = '/media/andreea/DATA1/dem2_data_andreea/test_metrics'
+output_directory_dem1 = '/media/andreea/DATA1/dem2_data_andreea/dem1_maps'
+output_directory_emr = '/media/andreea/DATA1/dem2_data_andreea/emr_maps'
+output_directory_emr2 = '/media/andreea/DATA1/dem2_data_andreea/emr2_maps'
+output_directory_cryoten = '/media/andreea/DATA1/dem2_data_andreea/cryoten_maps'
+output_directory_locspiral = '/media/andreea/DATA1/dem2_data_andreea/locspiral'
+
+output_directory_other = ''
+
+extra_directory = '/media/andreea/DATA1/extra_metrics'
+json_file_path = '/media/andreea/DATA1/dem2_data_andreea/codes/otros/train_val_test_split.json'   
+#sep2024_train_val_test_split
+
+code_py_path = '/media/andreea/DATA1/dem2_data_andreea/codes/script_metrics'
+
+
+# For locscale- files algorithm
+output_directory_locscale_ = '/media/andreea/DATA1/dem2_data_andreea/locscale-'
+tmp_folder_locscale = '/media/andreea/DATA1/dem2_data_andreea/tmp'
+processing_files_locscale = '/media/andreea/DATA1/dem2_data_andreea/tmp/processing_files'
+
+
+output_folder_csv = "/media/andreea/DATA1/dem2_data_andreea"
+
+

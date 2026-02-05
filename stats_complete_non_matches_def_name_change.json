@@ -1,0 +1,2942 @@
+{
+    "qscore_avg_refine": {
+        "mean": {
+            "cryoten": 0.5439666666666667,
+            "dem": 0.47238842975206613,
+            "emr2": 0.605008547008547,
+            "emr": 0.6082416666666667,
+            "locscale*": 0.5477,
+            "locscale": 0.5418135593220339,
+            "locspiral": 0.5405535714285714,
+            "average_maps": 0.5118688524590164
+        },
+        "median": {
+            "cryoten": 0.573,
+            "dem": 0.495,
+            "emr2": 0.644,
+            "emr": 0.6275,
+            "locscale*": 0.5734999999999999,
+            "locscale": 0.5665,
+            "locspiral": 0.5625,
+            "average_maps": 0.529
+        },
+        "25%": {
+            "cryoten": 0.43474999999999997,
+            "dem": 0.363,
+            "emr2": 0.525,
+            "emr": 0.50925,
+            "locscale*": 0.4655,
+            "locscale": 0.44775,
+            "locspiral": 0.45,
+            "average_maps": 0.419
+        },
+        "75%": {
+            "cryoten": 0.6555,
+            "dem": 0.597,
+            "emr2": 0.726,
+            "emr": 0.7255,
+            "locscale*": 0.646,
+            "locscale": 0.648,
+            "locspiral": 0.65525,
+            "average_maps": 0.6185
+        }
+    },
+    "qscore_avg_not_refine": {
+        "mean": {
+            "cryoten": 0.5133515625,
+            "dem": 0.451984375,
+            "emr2": 0.5654062499999999,
+            "emr": 0.5618203125,
+            "locscale*": 0.524140625,
+            "locscale": 0.5028359375,
+            "locspiral": 0.492421875,
+            "average_maps": 0.49224999999999997
+        },
+        "median": {
+            "cryoten": 0.539,
+            "dem": 0.4805,
+            "emr2": 0.591,
+            "emr": 0.5905,
+            "locscale*": 0.5475000000000001,
+            "locscale": 0.5345,
+            "locspiral": 0.51,
+            "average_maps": 0.514
+        },
+        "25%": {
+            "cryoten": 0.3915,
+            "dem": 0.3385,
+            "emr2": 0.44025000000000003,
+            "emr": 0.451,
+            "locscale*": 0.4235,
+            "locscale": 0.39925,
+            "locspiral": 0.375,
+            "average_maps": 0.3745
+        },
+        "75%": {
+            "cryoten": 0.638,
+            "dem": 0.5814999999999999,
+            "emr2": 0.7044999999999999,
+            "emr": 0.703,
+            "locscale*": 0.638,
+            "locscale": 0.6355,
+            "locspiral": 0.63125,
+            "average_maps": 0.601
+        }
+    },
+    "optimal_threshold_refine": {
+        "mean": {
+            "cryoten": 0.8143189655172414,
+            "dem": 0.4824782608695652,
+            "emr2": 8.742694915254237,
+            "emr": 8.169974576271187,
+            "locscale*": 0.28867521367521365,
+            "locscale": 0.3113684210526315,
+            "locspiral": 0.7438859649122807,
+            "average_maps": 0.3285897435897436
+        },
+        "median": {
+            "cryoten": 0.81,
+            "dem": 0.456,
+            "emr2": 8.788,
+            "emr": 8.154,
+            "locscale*": 0.282,
+            "locscale": 0.2735,
+            "locspiral": 0.662,
+            "average_maps": 0.173
+        },
+        "25%": {
+            "cryoten": 0.517,
+            "dem": 0.263,
+            "emr2": 7.42675,
+            "emr": 6.912,
+            "locscale*": 0.24,
+            "locscale": 0.22525,
+            "locspiral": 0.48075,
+            "average_maps": 0.026
+        },
+        "75%": {
+            "cryoten": 1.0285,
+            "dem": 0.578,
+            "emr2": 9.9245,
+            "emr": 9.012500000000001,
+            "locscale*": 0.324,
+            "locscale": 0.37424999999999997,
+            "locspiral": 0.884,
+            "average_maps": 0.474
+        }
+    },
+    "optimal_threshold_not_refine": {
+        "mean": {
+            "cryoten": 0.8037258064516128,
+            "dem": 0.48870967741935484,
+            "emr2": 8.757104838709676,
+            "emr": 8.456475806451614,
+            "locscale*": 0.3005403225806451,
+            "locscale": 0.3292903225806452,
+            "locspiral": 0.7732096774193549,
+            "average_maps": 0.3107419354838709
+        },
+        "median": {
+            "cryoten": 0.7665,
+            "dem": 0.4235,
+            "emr2": 8.636,
+            "emr": 8.3995,
+            "locscale*": 0.2825,
+            "locscale": 0.2915,
+            "locspiral": 0.67,
+            "average_maps": 0.1745
+        },
+        "25%": {
+            "cryoten": 0.53075,
+            "dem": 0.2675,
+            "emr2": 7.6295,
+            "emr": 7.3625,
+            "locscale*": 0.248,
+            "locscale": 0.24475,
+            "locspiral": 0.52075,
+            "average_maps": 0.02575
+        },
+        "75%": {
+            "cryoten": 0.99875,
+            "dem": 0.6455,
+            "emr2": 9.8745,
+            "emr": 9.64425,
+            "locscale*": 0.333,
+            "locscale": 0.41025,
+            "locspiral": 0.968,
+            "average_maps": 0.465
+        }
+    },
+    "rotamer_ratio_refine": {
+        "mean": {
+            "cryoten": 0.7317327586206896,
+            "dem": 0.7596608695652174,
+            "emr2": 0.7574152542372881,
+            "emr": 0.7457203389830509,
+            "locscale*": 0.7445128205128205,
+            "locscale": 0.7344210526315789,
+            "locspiral": 0.7006052631578947,
+            "average_maps": 0.7574871794871795
+        },
+        "median": {
+            "cryoten": 0.732,
+            "dem": 0.748,
+            "emr2": 0.75,
+            "emr": 0.7444999999999999,
+            "locscale*": 0.737,
+            "locscale": 0.727,
+            "locspiral": 0.688,
+            "average_maps": 0.758
+        },
+        "25%": {
+            "cryoten": 0.6915,
+            "dem": 0.717,
+            "emr2": 0.7124999999999999,
+            "emr": 0.7152499999999999,
+            "locscale*": 0.705,
+            "locscale": 0.698,
+            "locspiral": 0.6575,
+            "average_maps": 0.7
+        },
+        "75%": {
+            "cryoten": 0.7725,
+            "dem": 0.8055000000000001,
+            "emr2": 0.7965,
+            "emr": 0.787,
+            "locscale*": 0.773,
+            "locscale": 0.76575,
+            "locspiral": 0.73275,
+            "average_maps": 0.822
+        }
+    },
+    "rotamer_ratio_not_refine": {
+        "mean": {
+            "cryoten": 0.7356612903225808,
+            "dem": 0.761524193548387,
+            "emr2": 0.7532419354838709,
+            "emr": 0.7544112903225806,
+            "locscale*": 0.7742177419354839,
+            "locscale": 0.7412741935483871,
+            "locspiral": 0.7024274193548387,
+            "average_maps": 0.7591693548387097
+        },
+        "median": {
+            "cryoten": 0.7335,
+            "dem": 0.7615000000000001,
+            "emr2": 0.7455,
+            "emr": 0.755,
+            "locscale*": 0.759,
+            "locscale": 0.742,
+            "locspiral": 0.69,
+            "average_maps": 0.776
+        },
+        "25%": {
+            "cryoten": 0.688,
+            "dem": 0.7115,
+            "emr2": 0.70375,
+            "emr": 0.707,
+            "locscale*": 0.723,
+            "locscale": 0.6982499999999999,
+            "locspiral": 0.654,
+            "average_maps": 0.71975
+        },
+        "75%": {
+            "cryoten": 0.77725,
+            "dem": 0.8134999999999999,
+            "emr2": 0.7985,
+            "emr": 0.804,
+            "locscale*": 0.824,
+            "locscale": 0.795,
+            "locspiral": 0.7464999999999999,
+            "average_maps": 0.8334999999999999
+        }
+    },
+    "max_zscore_refine": {
+        "mean": {
+            "cryoten": 7.7420431034482755,
+            "dem": 8.226939130434783,
+            "emr2": 8.85928813559322,
+            "emr": 8.915025423728814,
+            "locscale*": 8.344752136752136,
+            "locscale": 7.71490350877193,
+            "locspiral": 6.932184210526316,
+            "average_maps": 7.156675213675213
+        },
+        "median": {
+            "cryoten": 7.1365,
+            "dem": 7.794,
+            "emr2": 8.241499999999998,
+            "emr": 8.3665,
+            "locscale*": 7.462,
+            "locscale": 7.0875,
+            "locspiral": 6.545,
+            "average_maps": 6.616
+        },
+        "25%": {
+            "cryoten": 4.344250000000001,
+            "dem": 4.8525,
+            "emr2": 4.6455,
+            "emr": 4.717,
+            "locscale*": 4.337,
+            "locscale": 3.9955000000000003,
+            "locspiral": 3.2822500000000003,
+            "average_maps": 2.601
+        },
+        "75%": {
+            "cryoten": 10.95775,
+            "dem": 11.3525,
+            "emr2": 12.16975,
+            "emr": 12.09225,
+            "locscale*": 11.674,
+            "locscale": 11.07475,
+            "locspiral": 10.51675,
+            "average_maps": 10.325
+        }
+    },
+    "max_zscore_not_refine": {
+        "mean": {
+            "cryoten": 7.9401290322580635,
+            "dem": 8.269024193548386,
+            "emr2": 8.944588709677419,
+            "emr": 9.067475806451613,
+            "locscale*": 8.904233870967742,
+            "locscale": 7.964959677419355,
+            "locspiral": 7.024427419354839,
+            "average_maps": 7.791637096774194
+        },
+        "median": {
+            "cryoten": 6.9655000000000005,
+            "dem": 7.6295,
+            "emr2": 7.6765,
+            "emr": 8.267,
+            "locscale*": 8.091000000000001,
+            "locscale": 6.916,
+            "locspiral": 5.978999999999999,
+            "average_maps": 6.9565
+        },
+        "25%": {
+            "cryoten": 3.70925,
+            "dem": 4.249750000000001,
+            "emr2": 4.94975,
+            "emr": 4.9135,
+            "locscale*": 4.289,
+            "locscale": 3.64175,
+            "locspiral": 3.3845,
+            "average_maps": 3.2185
+        },
+        "75%": {
+            "cryoten": 10.89625,
+            "dem": 11.16575,
+            "emr2": 12.336749999999999,
+            "emr": 11.854500000000002,
+            "locscale*": 12.129,
+            "locscale": 11.602,
+            "locspiral": 10.017999999999999,
+            "average_maps": 10.84
+        }
+    },
+    "len_model_refine": {
+        "mean": {
+            "cryoten": 1406.698275862069,
+            "dem": 1436.7826086956522,
+            "emr2": 1437.7457627118645,
+            "emr": 1420.6949152542372,
+            "locscale*": 1409.905982905983,
+            "locscale": 1418.0263157894738,
+            "locspiral": 1418.7456140350878,
+            "average_maps": 1419.2991452991453
+        },
+        "median": {
+            "cryoten": 1116.0,
+            "dem": 1136.0,
+            "emr2": 1120.5,
+            "emr": 1116.0,
+            "locscale*": 1116.0,
+            "locscale": 1120.5,
+            "locspiral": 1120.5,
+            "average_maps": 1116.0
+        },
+        "25%": {
+            "cryoten": 733.5,
+            "dem": 731.0,
+            "emr2": 740.75,
+            "emr": 740.75,
+            "locscale*": 726.0,
+            "locscale": 728.5,
+            "locspiral": 740.75,
+            "average_maps": 726.0
+        },
+        "75%": {
+            "cryoten": 1777.25,
+            "dem": 1806.0,
+            "emr2": 1806.0,
+            "emr": 1802.75,
+            "locscale*": 1793.0,
+            "locscale": 1787.75,
+            "locspiral": 1787.75,
+            "average_maps": 1806.0
+        }
+    },
+    "len_model_not_refine": {
+        "mean": {
+            "cryoten": 1420.9274193548388,
+            "dem": 1420.9274193548388,
+            "emr2": 1420.9274193548388,
+            "emr": 1420.9274193548388,
+            "locscale*": 1420.9274193548388,
+            "locscale": 1420.9274193548388,
+            "locspiral": 1420.9274193548388,
+            "average_maps": 1420.9274193548388
+        },
+        "median": {
+            "cryoten": 1120.5,
+            "dem": 1120.5,
+            "emr2": 1120.5,
+            "emr": 1120.5,
+            "locscale*": 1120.5,
+            "locscale": 1120.5,
+            "locspiral": 1120.5,
+            "average_maps": 1120.5
+        },
+        "25%": {
+            "cryoten": 750.25,
+            "dem": 750.25,
+            "emr2": 750.25,
+            "emr": 750.25,
+            "locscale*": 750.25,
+            "locscale": 750.25,
+            "locspiral": 750.25,
+            "average_maps": 750.25
+        },
+        "75%": {
+            "cryoten": 1796.25,
+            "dem": 1796.25,
+            "emr2": 1796.25,
+            "emr": 1796.25,
+            "locscale*": 1796.25,
+            "locscale": 1796.25,
+            "locspiral": 1796.25,
+            "average_maps": 1796.25
+        }
+    },
+    "emringer_score_refine": {
+        "mean": {
+            "cryoten": 2.2328697068965515,
+            "dem": 2.309941547826087,
+            "emr2": 2.4818755762711864,
+            "emr": 2.4970774322033895,
+            "locscale*": 2.3555727179487174,
+            "locscale": 2.178723789473684,
+            "locspiral": 1.995465061403509,
+            "average_maps": 2.002884111111111
+        },
+        "median": {
+            "cryoten": 2.231191,
+            "dem": 2.487382,
+            "emr2": 2.5409865,
+            "emr": 2.5523024999999997,
+            "locscale*": 2.510385,
+            "locscale": 2.330852,
+            "locspiral": 1.9448105,
+            "average_maps": 2.137693
+        },
+        "25%": {
+            "cryoten": 1.51326325,
+            "dem": 1.4144459999999999,
+            "emr2": 1.6553849999999999,
+            "emr": 1.58869275,
+            "locscale*": 1.392693,
+            "locscale": 1.2678767499999999,
+            "locspiral": 1.14047875,
+            "average_maps": 0.92787
+        },
+        "75%": {
+            "cryoten": 3.076105,
+            "dem": 3.1440395,
+            "emr2": 3.2244537500000003,
+            "emr": 3.410226,
+            "locscale*": 3.017413,
+            "locscale": 2.92993675,
+            "locspiral": 2.587478,
+            "average_maps": 2.867669
+        }
+    },
+    "emringer_score_not_refine": {
+        "mean": {
+            "cryoten": 2.2359577419354837,
+            "dem": 2.329980306451613,
+            "emr2": 2.5039316209677422,
+            "emr": 2.538855040322581,
+            "locscale*": 2.4986305725806455,
+            "locscale": 2.2374052419354835,
+            "locspiral": 2.0026945,
+            "average_maps": 2.1751084032258063
+        },
+        "median": {
+            "cryoten": 2.2405715,
+            "dem": 2.440652,
+            "emr2": 2.5737075000000003,
+            "emr": 2.569211,
+            "locscale*": 2.6185975,
+            "locscale": 2.3934945,
+            "locspiral": 1.7872005,
+            "average_maps": 2.3082995
+        },
+        "25%": {
+            "cryoten": 1.090541,
+            "dem": 1.31505425,
+            "emr2": 1.4880415,
+            "emr": 1.61073175,
+            "locscale*": 1.4648225,
+            "locscale": 1.0253765000000001,
+            "locspiral": 1.068067,
+            "average_maps": 0.921468
+        },
+        "75%": {
+            "cryoten": 3.1009675,
+            "dem": 3.1110664999999997,
+            "emr2": 3.4272167500000004,
+            "emr": 3.401376,
+            "locscale*": 3.29601775,
+            "locscale": 3.12027875,
+            "locspiral": 2.9249592499999997,
+            "average_maps": 3.21697175
+        }
+    },
+    "d99_masked_refine": {
+        "mean": {
+            "cryoten": 3.2545081967213116,
+            "dem": 2.6224793388429752,
+            "emr2": 3.2427642276422763,
+            "emr": 3.29064,
+            "locscale*": 3.0973770491803276,
+            "locscale": 2.3573728813559325,
+            "locspiral": 2.2673949579831936,
+            "average_maps": 4.042016129032258
+        },
+        "median": {
+            "cryoten": 2.8499999999999996,
+            "dem": 2.44,
+            "emr2": 2.84,
+            "emr": 2.88,
+            "locscale*": 2.925,
+            "locscale": 2.295,
+            "locspiral": 2.16,
+            "average_maps": 3.84
+        },
+        "25%": {
+            "cryoten": 2.4000000000000004,
+            "dem": 2.32,
+            "emr2": 2.55,
+            "emr": 2.69,
+            "locscale*": 2.4125,
+            "locscale": 1.8924999999999998,
+            "locspiral": 2.045,
+            "average_maps": 2.6550000000000002
+        },
+        "75%": {
+            "cryoten": 3.43,
+            "dem": 2.8,
+            "emr2": 3.62,
+            "emr": 3.44,
+            "locscale*": 3.5875,
+            "locscale": 2.725,
+            "locspiral": 2.38,
+            "average_maps": 4.355
+        }
+    },
+    "d99_masked_not_refine": {
+        "mean": {
+            "cryoten": 3.207265625,
+            "dem": 2.605546875,
+            "emr2": 3.227734375,
+            "emr": 3.271015625,
+            "locscale*": 3.0500000000000003,
+            "locscale": 2.328046875,
+            "locspiral": 2.2514173228346457,
+            "average_maps": 3.9907812500000004
+        },
+        "median": {
+            "cryoten": 2.83,
+            "dem": 2.43,
+            "emr2": 2.8200000000000003,
+            "emr": 2.865,
+            "locscale*": 2.885,
+            "locscale": 2.2649999999999997,
+            "locspiral": 2.15,
+            "average_maps": 3.825
+        },
+        "25%": {
+            "cryoten": 2.3525,
+            "dem": 2.3075,
+            "emr2": 2.5375,
+            "emr": 2.68,
+            "locscale*": 2.3200000000000003,
+            "locscale": 1.8675000000000002,
+            "locspiral": 2.02,
+            "average_maps": 2.6575
+        },
+        "75%": {
+            "cryoten": 3.43,
+            "dem": 2.7325,
+            "emr2": 3.6225,
+            "emr": 3.4025,
+            "locscale*": 3.445,
+            "locscale": 2.6875,
+            "locspiral": 2.38,
+            "average_maps": 4.31
+        }
+    },
+    "d99_unmasked_refine": {
+        "mean": {
+            "cryoten": 2.9868032786885244,
+            "dem": 2.6285950413223143,
+            "emr2": 3.270487804878049,
+            "emr": 3.31632,
+            "locscale*": 3.0340983606557375,
+            "locscale": 2.343983050847458,
+            "locspiral": 2.241764705882353,
+            "average_maps": 2.717177419354839
+        },
+        "median": {
+            "cryoten": 2.68,
+            "dem": 2.44,
+            "emr2": 2.85,
+            "emr": 2.9,
+            "locscale*": 2.85,
+            "locscale": 2.285,
+            "locspiral": 2.14,
+            "average_maps": 2.24
+        },
+        "25%": {
+            "cryoten": 2.1425,
+            "dem": 2.32,
+            "emr2": 2.5700000000000003,
+            "emr": 2.71,
+            "locscale*": 2.3449999999999998,
+            "locscale": 1.8924999999999998,
+            "locspiral": 2.02,
+            "average_maps": 1.8925
+        },
+        "75%": {
+            "cryoten": 3.145,
+            "dem": 2.81,
+            "emr2": 3.635,
+            "emr": 3.45,
+            "locscale*": 3.4725,
+            "locscale": 2.7025,
+            "locspiral": 2.3600000000000003,
+            "average_maps": 2.7625
+        }
+    },
+    "d99_unmasked_not_refine": {
+        "mean": {
+            "cryoten": 2.928515625,
+            "dem": 2.6117187499999996,
+            "emr2": 3.2535156250000004,
+            "emr": 3.2959375,
+            "locscale*": 2.9890625,
+            "locscale": 2.313046875,
+            "locspiral": 2.225984251968504,
+            "average_maps": 2.686953125
+        },
+        "median": {
+            "cryoten": 2.66,
+            "dem": 2.44,
+            "emr2": 2.84,
+            "emr": 2.8899999999999997,
+            "locscale*": 2.81,
+            "locscale": 2.245,
+            "locspiral": 2.13,
+            "average_maps": 2.2300000000000004
+        },
+        "25%": {
+            "cryoten": 2.0775,
+            "dem": 2.31,
+            "emr2": 2.5475,
+            "emr": 2.7,
+            "locscale*": 2.26,
+            "locscale": 1.8575000000000002,
+            "locspiral": 1.995,
+            "average_maps": 1.8575000000000002
+        },
+        "75%": {
+            "cryoten": 3.0625,
+            "dem": 2.7425,
+            "emr2": 3.6325,
+            "emr": 3.4275,
+            "locscale*": 3.42,
+            "locscale": 2.6425,
+            "locspiral": 2.3600000000000003,
+            "average_maps": 2.7425
+        }
+    },
+    "d_model_masked_refine": {
+        "mean": {
+            "cryoten": 1.9975409836065572,
+            "dem": 2.6,
+            "emr2": 1.6300813008130082,
+            "emr": 1.6696,
+            "locscale*": 3.3655737704918036,
+            "locscale": 2.6042372881355935,
+            "locspiral": 2.636974789915967,
+            "average_maps": 3.3595041322314048
+        },
+        "median": {
+            "cryoten": 1.6,
+            "dem": 2.2,
+            "emr2": 1.5,
+            "emr": 1.5,
+            "locscale*": 3.3,
+            "locscale": 2.55,
+            "locspiral": 2.7,
+            "average_maps": 3.2
+        },
+        "25%": {
+            "cryoten": 1.5,
+            "dem": 2.1,
+            "emr2": 1.3,
+            "emr": 1.4,
+            "locscale*": 3.0,
+            "locscale": 1.9249999999999998,
+            "locspiral": 1.85,
+            "average_maps": 2.9
+        },
+        "75%": {
+            "cryoten": 2.0,
+            "dem": 2.9,
+            "emr2": 1.7,
+            "emr": 1.6,
+            "locscale*": 3.7,
+            "locscale": 3.2,
+            "locspiral": 3.1,
+            "average_maps": 3.6
+        }
+    },
+    "d_model_masked_not_refine": {
+        "mean": {
+            "cryoten": 2.22421875,
+            "dem": 2.8578125000000005,
+            "emr2": 1.81015625,
+            "emr": 1.8140625,
+            "locscale*": 3.37890625,
+            "locscale": 2.9976562500000004,
+            "locspiral": 2.9165354330708664,
+            "average_maps": 3.4616
+        },
+        "median": {
+            "cryoten": 1.7,
+            "dem": 2.8,
+            "emr2": 1.5,
+            "emr": 1.5,
+            "locscale*": 3.3,
+            "locscale": 3.0,
+            "locspiral": 3.0,
+            "average_maps": 3.2
+        },
+        "25%": {
+            "cryoten": 1.5,
+            "dem": 2.1,
+            "emr2": 1.3,
+            "emr": 1.4,
+            "locscale*": 2.9,
+            "locscale": 2.3,
+            "locspiral": 1.9,
+            "average_maps": 3.0
+        },
+        "75%": {
+            "cryoten": 2.225,
+            "dem": 3.2,
+            "emr2": 1.9,
+            "emr": 1.725,
+            "locscale*": 3.75,
+            "locscale": 3.525,
+            "locspiral": 3.5,
+            "average_maps": 3.6
+        }
+    },
+    "d_model_unmasked_refine": {
+        "mean": {
+            "cryoten": 2.068032786885246,
+            "dem": 2.588429752066116,
+            "emr2": 1.6528455284552843,
+            "emr": 1.7152,
+            "locscale*": 3.3745901639344265,
+            "locscale": 2.6474576271186443,
+            "locspiral": 2.668067226890756,
+            "average_maps": 3.6121951219512196
+        },
+        "median": {
+            "cryoten": 1.7,
+            "dem": 2.2,
+            "emr2": 1.5,
+            "emr": 1.5,
+            "locscale*": 3.3,
+            "locscale": 2.6500000000000004,
+            "locspiral": 2.8,
+            "average_maps": 3.3
+        },
+        "25%": {
+            "cryoten": 1.5,
+            "dem": 2.1,
+            "emr2": 1.3,
+            "emr": 1.4,
+            "locscale*": 3.0,
+            "locscale": 2.025,
+            "locspiral": 1.8,
+            "average_maps": 3.05
+        },
+        "75%": {
+            "cryoten": 2.1,
+            "dem": 2.9,
+            "emr2": 1.8,
+            "emr": 1.6,
+            "locscale*": 3.8,
+            "locscale": 3.2,
+            "locspiral": 3.1500000000000004,
+            "average_maps": 3.7
+        }
+    },
+    "d_model_unmasked_not_refine": {
+        "mean": {
+            "cryoten": 2.29765625,
+            "dem": 2.8820312500000003,
+            "emr2": 1.81640625,
+            "emr": 1.8453125,
+            "locscale*": 3.38046875,
+            "locscale": 3.009375,
+            "locspiral": 2.9393700787401573,
+            "average_maps": 3.7417322834645668
+        },
+        "median": {
+            "cryoten": 1.9,
+            "dem": 2.9,
+            "emr2": 1.5,
+            "emr": 1.5,
+            "locscale*": 3.3,
+            "locscale": 3.0,
+            "locspiral": 3.0,
+            "average_maps": 3.3
+        },
+        "25%": {
+            "cryoten": 1.6,
+            "dem": 2.1,
+            "emr2": 1.4,
+            "emr": 1.4,
+            "locscale*": 2.9,
+            "locscale": 2.3,
+            "locspiral": 2.25,
+            "average_maps": 3.1
+        },
+        "75%": {
+            "cryoten": 2.3,
+            "dem": 3.2,
+            "emr2": 1.9,
+            "emr": 1.7,
+            "locscale*": 3.75,
+            "locscale": 3.525,
+            "locspiral": 3.5,
+            "average_maps": 3.7
+        }
+    },
+    "b_iso_overall_masked_refine": {
+        "mean": {
+            "cryoten": 112.62295081967213,
+            "dem": 64.29752066115702,
+            "emr2": 95.16260162601625,
+            "emr": 98.88,
+            "locscale*": 93.68852459016394,
+            "locscale": 93.85593220338983,
+            "locspiral": 65.63025210084034,
+            "average_maps": 152.5206611570248
+        },
+        "median": {
+            "cryoten": 75.0,
+            "dem": 50.0,
+            "emr2": 65.0,
+            "emr": 65.0,
+            "locscale*": 67.5,
+            "locscale": 70.0,
+            "locspiral": 55.0,
+            "average_maps": 105.0
+        },
+        "25%": {
+            "cryoten": 60.0,
+            "dem": 40.0,
+            "emr2": 50.0,
+            "emr": 55.0,
+            "locscale*": 55.0,
+            "locscale": 60.0,
+            "locspiral": 45.0,
+            "average_maps": 75.0
+        },
+        "75%": {
+            "cryoten": 137.5,
+            "dem": 75.0,
+            "emr2": 107.5,
+            "emr": 100.0,
+            "locscale*": 100.0,
+            "locscale": 105.0,
+            "locspiral": 75.0,
+            "average_maps": 190.0
+        }
+    },
+    "b_iso_overall_masked_not_refine": {
+        "mean": {
+            "cryoten": 117.8125,
+            "dem": 67.6171875,
+            "emr2": 101.640625,
+            "emr": 106.1328125,
+            "locscale*": 99.21875,
+            "locscale": 99.765625,
+            "locspiral": 73.11023622047244,
+            "average_maps": 151.84
+        },
+        "median": {
+            "cryoten": 80.0,
+            "dem": 50.0,
+            "emr2": 67.5,
+            "emr": 70.0,
+            "locscale*": 67.5,
+            "locscale": 75.0,
+            "locspiral": 55.0,
+            "average_maps": 105.0
+        },
+        "25%": {
+            "cryoten": 60.0,
+            "dem": 45.0,
+            "emr2": 50.0,
+            "emr": 55.0,
+            "locscale*": 58.75,
+            "locscale": 60.0,
+            "locspiral": 45.0,
+            "average_maps": 75.0
+        },
+        "75%": {
+            "cryoten": 136.25,
+            "dem": 80.0,
+            "emr2": 116.25,
+            "emr": 115.0,
+            "locscale*": 110.0,
+            "locscale": 110.0,
+            "locspiral": 85.0,
+            "average_maps": 195.0
+        }
+    },
+    "b_iso_overall_unmasked_refine": {
+        "mean": {
+            "cryoten": 112.78688524590164,
+            "dem": 64.33884297520662,
+            "emr2": 96.01626016260163,
+            "emr": 101.2,
+            "locscale*": 94.26229508196721,
+            "locscale": 94.95762711864407,
+            "locspiral": 65.88235294117646,
+            "average_maps": 162.15447154471545
+        },
+        "median": {
+            "cryoten": 75.0,
+            "dem": 50.0,
+            "emr2": 65.0,
+            "emr": 70.0,
+            "locscale*": 67.5,
+            "locscale": 70.0,
+            "locspiral": 55.0,
+            "average_maps": 110.0
+        },
+        "25%": {
+            "cryoten": 60.0,
+            "dem": 40.0,
+            "emr2": 50.0,
+            "emr": 55.0,
+            "locscale*": 55.0,
+            "locscale": 60.0,
+            "locspiral": 45.0,
+            "average_maps": 75.0
+        },
+        "75%": {
+            "cryoten": 137.5,
+            "dem": 75.0,
+            "emr2": 110.0,
+            "emr": 100.0,
+            "locscale*": 105.0,
+            "locscale": 105.0,
+            "locspiral": 75.0,
+            "average_maps": 200.0
+        }
+    },
+    "b_iso_overall_unmasked_not_refine": {
+        "mean": {
+            "cryoten": 118.1640625,
+            "dem": 67.6953125,
+            "emr2": 102.3828125,
+            "emr": 108.0859375,
+            "locscale*": 99.8046875,
+            "locscale": 101.3671875,
+            "locspiral": 74.1732283464567,
+            "average_maps": 160.9448818897638
+        },
+        "median": {
+            "cryoten": 80.0,
+            "dem": 50.0,
+            "emr2": 67.5,
+            "emr": 70.0,
+            "locscale*": 70.0,
+            "locscale": 75.0,
+            "locspiral": 55.0,
+            "average_maps": 110.0
+        },
+        "25%": {
+            "cryoten": 60.0,
+            "dem": 45.0,
+            "emr2": 50.0,
+            "emr": 55.0,
+            "locscale*": 58.75,
+            "locscale": 60.0,
+            "locspiral": 45.0,
+            "average_maps": 75.0
+        },
+        "75%": {
+            "cryoten": 136.25,
+            "dem": 80.0,
+            "emr2": 120.0,
+            "emr": 115.0,
+            "locscale*": 110.0,
+            "locscale": 110.0,
+            "locspiral": 85.0,
+            "average_maps": 202.5
+        }
+    },
+    "d_model_b0_masked_refine": {
+        "mean": {
+            "cryoten": 5.163114754098362,
+            "dem": 4.2446280991735525,
+            "emr2": 4.678048780487805,
+            "emr": 4.788799999999999,
+            "locscale*": 4.527049180327868,
+            "locscale": 4.625423728813559,
+            "locspiral": 3.810084033613445,
+            "average_maps": 6.167768595041322
+        },
+        "median": {
+            "cryoten": 4.15,
+            "dem": 3.7,
+            "emr2": 4.0,
+            "emr": 4.0,
+            "locscale*": 3.95,
+            "locscale": 4.0,
+            "locspiral": 3.5,
+            "average_maps": 5.9
+        },
+        "25%": {
+            "cryoten": 3.8,
+            "dem": 3.5,
+            "emr2": 3.4,
+            "emr": 3.6,
+            "locscale*": 3.6,
+            "locscale": 3.7,
+            "locspiral": 3.2,
+            "average_maps": 4.1
+        },
+        "75%": {
+            "cryoten": 7.1,
+            "dem": 4.3,
+            "emr2": 4.8,
+            "emr": 4.8,
+            "locscale*": 4.574999999999999,
+            "locscale": 4.5,
+            "locspiral": 4.1,
+            "average_maps": 8.2
+        }
+    },
+    "d_model_b0_masked_not_refine": {
+        "mean": {
+            "cryoten": 5.25,
+            "dem": 4.278125,
+            "emr2": 4.8375,
+            "emr": 5.0,
+            "locscale*": 4.6382812499999995,
+            "locscale": 4.734375,
+            "locspiral": 3.956692913385827,
+            "average_maps": 6.1768
+        },
+        "median": {
+            "cryoten": 4.2,
+            "dem": 3.75,
+            "emr2": 4.0,
+            "emr": 4.0,
+            "locscale*": 3.9,
+            "locscale": 4.0,
+            "locspiral": 3.5,
+            "average_maps": 6.0
+        },
+        "25%": {
+            "cryoten": 3.7,
+            "dem": 3.5,
+            "emr2": 3.5,
+            "emr": 3.6750000000000003,
+            "locscale*": 3.6,
+            "locscale": 3.7,
+            "locspiral": 3.1500000000000004,
+            "average_maps": 4.1
+        },
+        "75%": {
+            "cryoten": 7.4,
+            "dem": 4.325,
+            "emr2": 6.125,
+            "emr": 6.699999999999999,
+            "locscale*": 4.625,
+            "locscale": 4.825,
+            "locspiral": 4.25,
+            "average_maps": 8.2
+        }
+    },
+    "d_model_b0_unmasked_refine": {
+        "mean": {
+            "cryoten": 5.174590163934426,
+            "dem": 4.245454545454545,
+            "emr2": 4.698373983739838,
+            "emr": 4.8256000000000006,
+            "locscale*": 4.54344262295082,
+            "locscale": 4.634745762711865,
+            "locspiral": 3.814285714285714,
+            "average_maps": 6.309756097560975
+        },
+        "median": {
+            "cryoten": 4.2,
+            "dem": 3.8,
+            "emr2": 4.0,
+            "emr": 4.0,
+            "locscale*": 3.95,
+            "locscale": 4.0,
+            "locspiral": 3.5,
+            "average_maps": 6.5
+        },
+        "25%": {
+            "cryoten": 3.8,
+            "dem": 3.5,
+            "emr2": 3.5,
+            "emr": 3.6,
+            "locscale*": 3.6,
+            "locscale": 3.7,
+            "locspiral": 3.2,
+            "average_maps": 4.1
+        },
+        "75%": {
+            "cryoten": 7.1,
+            "dem": 4.3,
+            "emr2": 4.8,
+            "emr": 4.8,
+            "locscale*": 4.574999999999999,
+            "locscale": 4.5,
+            "locspiral": 4.1,
+            "average_maps": 8.3
+        }
+    },
+    "d_model_b0_unmasked_not_refine": {
+        "mean": {
+            "cryoten": 5.25078125,
+            "dem": 4.280468750000001,
+            "emr2": 4.8734375000000005,
+            "emr": 5.0625,
+            "locscale*": 4.6734375,
+            "locscale": 4.740625,
+            "locspiral": 3.9803149606299213,
+            "average_maps": 6.318897637795276
+        },
+        "median": {
+            "cryoten": 4.2,
+            "dem": 3.75,
+            "emr2": 4.0,
+            "emr": 4.1,
+            "locscale*": 3.9,
+            "locscale": 4.0,
+            "locspiral": 3.5,
+            "average_maps": 6.6
+        },
+        "25%": {
+            "cryoten": 3.775,
+            "dem": 3.5,
+            "emr2": 3.5,
+            "emr": 3.7,
+            "locscale*": 3.6,
+            "locscale": 3.7,
+            "locspiral": 3.2,
+            "average_maps": 4.1
+        },
+        "75%": {
+            "cryoten": 7.325,
+            "dem": 4.325,
+            "emr2": 6.525,
+            "emr": 7.0,
+            "locscale*": 4.7,
+            "locscale": 4.825,
+            "locspiral": 4.25,
+            "average_maps": 8.3
+        }
+    },
+    "d_fsc_model_0_masked_refine": {
+        "mean": {
+            "cryoten": 1.7732231404958678,
+            "dem": 1.7528813559322034,
+            "emr2": 1.504519230769231,
+            "emr": 1.5221600000000002,
+            "locscale*": 2.3021311475409836,
+            "locscale": 2.0901694915254234,
+            "locspiral": 1.9440677966101694,
+            "average_maps": 2.597851239669421
+        },
+        "median": {
+            "cryoten": 1.55,
+            "dem": 1.6349999999999998,
+            "emr2": 1.36,
+            "emr": 1.42,
+            "locscale*": 2.145,
+            "locscale": 2.0,
+            "locspiral": 1.85,
+            "average_maps": 2.48
+        },
+        "25%": {
+            "cryoten": 1.42,
+            "dem": 1.53,
+            "emr2": 1.2375,
+            "emr": 1.36,
+            "locscale*": 1.97,
+            "locscale": 1.7825,
+            "locspiral": 1.7025,
+            "average_maps": 2.23
+        },
+        "75%": {
+            "cryoten": 1.88,
+            "dem": 1.8450000000000002,
+            "emr2": 1.6,
+            "emr": 1.48,
+            "locscale*": 2.43,
+            "locscale": 2.2625,
+            "locspiral": 2.115,
+            "average_maps": 2.85
+        }
+    },
+    "d_fsc_model_0_masked_not_refine": {
+        "mean": {
+            "cryoten": 1.9326771653543307,
+            "dem": 1.8643750000000001,
+            "emr2": 1.6135344827586209,
+            "emr": 1.632265625,
+            "locscale*": 2.4109375,
+            "locscale": 2.4084375,
+            "locspiral": 2.1166929133858265,
+            "average_maps": 2.7176000000000005
+        },
+        "median": {
+            "cryoten": 1.63,
+            "dem": 1.6749999999999998,
+            "emr2": 1.41,
+            "emr": 1.44,
+            "locscale*": 2.21,
+            "locscale": 2.1900000000000004,
+            "locspiral": 1.91,
+            "average_maps": 2.6
+        },
+        "25%": {
+            "cryoten": 1.455,
+            "dem": 1.53,
+            "emr2": 1.2775,
+            "emr": 1.37,
+            "locscale*": 2.0,
+            "locscale": 1.96,
+            "locspiral": 1.7149999999999999,
+            "average_maps": 2.35
+        },
+        "75%": {
+            "cryoten": 2.125,
+            "dem": 1.9925,
+            "emr2": 1.8525,
+            "emr": 1.6125,
+            "locscale*": 2.835,
+            "locscale": 2.8499999999999996,
+            "locspiral": 2.215,
+            "average_maps": 2.95
+        }
+    },
+    "d_fsc_model_0_unmasked_refine": {
+        "mean": {
+            "cryoten": 1.855619834710744,
+            "dem": 1.7570338983050848,
+            "emr2": 1.5270754716981132,
+            "emr": 1.5375999999999999,
+            "locscale*": 2.3134426229508196,
+            "locscale": 2.1172033898305087,
+            "locspiral": 1.959915254237288,
+            "average_maps": 3.0043089430894305
+        },
+        "median": {
+            "cryoten": 1.63,
+            "dem": 1.6349999999999998,
+            "emr2": 1.3650000000000002,
+            "emr": 1.43,
+            "locscale*": 2.145,
+            "locscale": 2.03,
+            "locspiral": 1.85,
+            "average_maps": 2.84
+        },
+        "25%": {
+            "cryoten": 1.46,
+            "dem": 1.53,
+            "emr2": 1.2625,
+            "emr": 1.36,
+            "locscale*": 1.975,
+            "locscale": 1.8025,
+            "locspiral": 1.705,
+            "average_maps": 2.53
+        },
+        "75%": {
+            "cryoten": 2.0,
+            "dem": 1.8450000000000002,
+            "emr2": 1.6375,
+            "emr": 1.49,
+            "locscale*": 2.46,
+            "locscale": 2.265,
+            "locspiral": 2.1175,
+            "average_maps": 3.33
+        }
+    },
+    "d_fsc_model_0_unmasked_not_refine": {
+        "mean": {
+            "cryoten": 2.012047244094488,
+            "dem": 1.87421875,
+            "emr2": 1.6391525423728814,
+            "emr": 1.652890625,
+            "locscale*": 2.42484375,
+            "locscale": 2.436484375,
+            "locspiral": 2.126771653543307,
+            "average_maps": 3.0759055118110235
+        },
+        "median": {
+            "cryoten": 1.74,
+            "dem": 1.6749999999999998,
+            "emr2": 1.415,
+            "emr": 1.45,
+            "locscale*": 2.21,
+            "locscale": 2.23,
+            "locspiral": 1.91,
+            "average_maps": 2.93
+        },
+        "25%": {
+            "cryoten": 1.51,
+            "dem": 1.53,
+            "emr2": 1.31,
+            "emr": 1.3875,
+            "locscale*": 2.0175,
+            "locscale": 1.9775,
+            "locspiral": 1.725,
+            "average_maps": 2.605
+        },
+        "75%": {
+            "cryoten": 2.205,
+            "dem": 1.9925,
+            "emr2": 1.8575000000000002,
+            "emr": 1.63,
+            "locscale*": 2.85,
+            "locscale": 2.8600000000000003,
+            "locspiral": 2.215,
+            "average_maps": 3.39
+        }
+    },
+    "d_fsc_model_0143_masked_refine": {
+        "mean": {
+            "cryoten": 2.33172131147541,
+            "dem": 2.268347107438016,
+            "emr2": 1.798032786885246,
+            "emr": 1.8426399999999998,
+            "locscale*": 2.7565573770491802,
+            "locscale": 2.689745762711864,
+            "locspiral": 2.4992436974789913,
+            "average_maps": 3.0629752066115703
+        },
+        "median": {
+            "cryoten": 1.975,
+            "dem": 1.9,
+            "emr2": 1.51,
+            "emr": 1.53,
+            "locscale*": 2.495,
+            "locscale": 2.45,
+            "locspiral": 2.21,
+            "average_maps": 2.91
+        },
+        "25%": {
+            "cryoten": 1.79,
+            "dem": 1.76,
+            "emr2": 1.4024999999999999,
+            "emr": 1.48,
+            "locscale*": 2.22,
+            "locscale": 2.2225,
+            "locspiral": 2.02,
+            "average_maps": 2.65
+        },
+        "75%": {
+            "cryoten": 2.645,
+            "dem": 2.44,
+            "emr2": 2.0075,
+            "emr": 1.89,
+            "locscale*": 3.165,
+            "locscale": 3.1,
+            "locspiral": 2.81,
+            "average_maps": 3.38
+        }
+    },
+    "d_fsc_model_0143_masked_not_refine": {
+        "mean": {
+            "cryoten": 2.663203125,
+            "dem": 2.669921875,
+            "emr2": 2.104453125,
+            "emr": 2.10734375,
+            "locscale*": 2.9771874999999994,
+            "locscale": 2.9975000000000005,
+            "locspiral": 2.8349606299212597,
+            "average_maps": 3.14296
+        },
+        "median": {
+            "cryoten": 2.17,
+            "dem": 2.0949999999999998,
+            "emr2": 1.78,
+            "emr": 1.73,
+            "locscale*": 2.7649999999999997,
+            "locscale": 2.775,
+            "locspiral": 2.58,
+            "average_maps": 2.95
+        },
+        "25%": {
+            "cryoten": 1.975,
+            "dem": 1.8875,
+            "emr2": 1.48,
+            "emr": 1.51,
+            "locscale*": 2.3175,
+            "locscale": 2.43,
+            "locspiral": 2.1,
+            "average_maps": 2.68
+        },
+        "75%": {
+            "cryoten": 3.165,
+            "dem": 3.0549999999999997,
+            "emr2": 2.21,
+            "emr": 2.1325,
+            "locscale*": 3.415,
+            "locscale": 3.385,
+            "locspiral": 3.255,
+            "average_maps": 3.47
+        }
+    },
+    "d_fsc_model_0143_unmasked_refine": {
+        "mean": {
+            "cryoten": 2.4322950819672133,
+            "dem": 2.273057851239669,
+            "emr2": 1.8257723577235772,
+            "emr": 1.86952,
+            "locscale*": 2.7868852459016393,
+            "locscale": 3.1649152542372883,
+            "locspiral": 2.544201680672269,
+            "average_maps": 3.589674796747967
+        },
+        "median": {
+            "cryoten": 2.0549999999999997,
+            "dem": 1.9,
+            "emr2": 1.52,
+            "emr": 1.54,
+            "locscale*": 2.54,
+            "locscale": 2.5199999999999996,
+            "locspiral": 2.25,
+            "average_maps": 3.35
+        },
+        "25%": {
+            "cryoten": 1.8425,
+            "dem": 1.77,
+            "emr2": 1.42,
+            "emr": 1.49,
+            "locscale*": 2.2325,
+            "locscale": 2.2425,
+            "locspiral": 2.04,
+            "average_maps": 3.0
+        },
+        "75%": {
+            "cryoten": 2.7824999999999998,
+            "dem": 2.44,
+            "emr2": 2.0149999999999997,
+            "emr": 1.9,
+            "locscale*": 3.165,
+            "locscale": 3.16,
+            "locspiral": 2.87,
+            "average_maps": 3.8899999999999997
+        }
+    },
+    "d_fsc_model_0143_unmasked_not_refine": {
+        "mean": {
+            "cryoten": 2.7271093750000004,
+            "dem": 2.675,
+            "emr2": 2.122265625,
+            "emr": 2.1318750000000004,
+            "locscale*": 3.0065625,
+            "locscale": 3.076328125,
+            "locspiral": 2.8996850393700786,
+            "average_maps": 3.654409448818898
+        },
+        "median": {
+            "cryoten": 2.22,
+            "dem": 2.1,
+            "emr2": 1.795,
+            "emr": 1.75,
+            "locscale*": 2.7699999999999996,
+            "locscale": 2.795,
+            "locspiral": 2.66,
+            "average_maps": 3.41
+        },
+        "25%": {
+            "cryoten": 1.9875,
+            "dem": 1.89,
+            "emr2": 1.5,
+            "emr": 1.53,
+            "locscale*": 2.3575,
+            "locscale": 2.4650000000000003,
+            "locspiral": 2.135,
+            "average_maps": 3.02
+        },
+        "75%": {
+            "cryoten": 3.16,
+            "dem": 3.0549999999999997,
+            "emr2": 2.2125,
+            "emr": 2.15,
+            "locscale*": 3.42,
+            "locscale": 3.45,
+            "locspiral": 3.3049999999999997,
+            "average_maps": 3.935
+        }
+    },
+    "d_fsc_model_05_masked_refine": {
+        "mean": {
+            "cryoten": 3.5486885245901636,
+            "dem": 4.098842975206612,
+            "emr2": 2.8096747967479674,
+            "emr": 2.7668000000000004,
+            "locscale*": 3.7743442622950822,
+            "locscale": 3.834915254237288,
+            "locspiral": 4.008151260504202,
+            "average_maps": 3.7892561983471076
+        },
+        "median": {
+            "cryoten": 3.08,
+            "dem": 3.28,
+            "emr2": 2.18,
+            "emr": 2.08,
+            "locscale*": 3.285,
+            "locscale": 3.185,
+            "locspiral": 3.24,
+            "average_maps": 3.35
+        },
+        "25%": {
+            "cryoten": 2.7525,
+            "dem": 3.06,
+            "emr2": 1.98,
+            "emr": 1.93,
+            "locscale*": 3.0,
+            "locscale": 2.8725,
+            "locspiral": 2.98,
+            "average_maps": 3.06
+        },
+        "75%": {
+            "cryoten": 3.87,
+            "dem": 4.06,
+            "emr2": 3.335,
+            "emr": 3.11,
+            "locscale*": 3.9525,
+            "locscale": 3.86,
+            "locspiral": 3.91,
+            "average_maps": 3.96
+        }
+    },
+    "d_fsc_model_05_masked_not_refine": {
+        "mean": {
+            "cryoten": 4.18953125,
+            "dem": 4.617421875,
+            "emr2": 3.65234375,
+            "emr": 3.7125000000000004,
+            "locscale*": 4.261015625000001,
+            "locscale": 4.323671875,
+            "locspiral": 4.9048031496063,
+            "average_maps": 4.241680000000001
+        },
+        "median": {
+            "cryoten": 3.42,
+            "dem": 3.635,
+            "emr2": 3.035,
+            "emr": 3.0,
+            "locscale*": 3.44,
+            "locscale": 3.5149999999999997,
+            "locspiral": 3.58,
+            "average_maps": 3.46
+        },
+        "25%": {
+            "cryoten": 3.01,
+            "dem": 3.295,
+            "emr2": 2.3,
+            "emr": 2.17,
+            "locscale*": 3.1399999999999997,
+            "locscale": 3.13,
+            "locspiral": 3.115,
+            "average_maps": 3.19
+        },
+        "75%": {
+            "cryoten": 4.165,
+            "dem": 4.3375,
+            "emr2": 3.995,
+            "emr": 3.9425,
+            "locscale*": 4.242500000000001,
+            "locscale": 4.2675,
+            "locspiral": 6.35,
+            "average_maps": 4.29
+        }
+    },
+    "d_fsc_model_05_unmasked_refine": {
+        "mean": {
+            "cryoten": 3.733032786885246,
+            "dem": 4.2593388429752075,
+            "emr2": 2.835772357723577,
+            "emr": 2.9505600000000003,
+            "locscale*": 3.802868852459016,
+            "locscale": 4.550169491525423,
+            "locspiral": 6.415630252100841,
+            "average_maps": 5.178617886178862
+        },
+        "median": {
+            "cryoten": 3.11,
+            "dem": 3.33,
+            "emr2": 2.2,
+            "emr": 2.09,
+            "locscale*": 3.3049999999999997,
+            "locscale": 3.295,
+            "locspiral": 3.4,
+            "average_maps": 3.89
+        },
+        "25%": {
+            "cryoten": 2.7525,
+            "dem": 3.07,
+            "emr2": 1.9849999999999999,
+            "emr": 1.95,
+            "locscale*": 2.995,
+            "locscale": 2.9074999999999998,
+            "locspiral": 3.06,
+            "average_maps": 3.51
+        },
+        "75%": {
+            "cryoten": 3.8775,
+            "dem": 4.1,
+            "emr2": 3.355,
+            "emr": 3.12,
+            "locscale*": 3.96,
+            "locscale": 4.1000000000000005,
+            "locspiral": 4.77,
+            "average_maps": 4.66
+        }
+    },
+    "d_fsc_model_05_unmasked_not_refine": {
+        "mean": {
+            "cryoten": 4.233281250000001,
+            "dem": 4.8640625,
+            "emr2": 3.7073437499999997,
+            "emr": 3.7379687500000003,
+            "locscale*": 4.323906249999999,
+            "locscale": 5.33578125,
+            "locspiral": 7.479212598425198,
+            "average_maps": 5.615826771653544
+        },
+        "median": {
+            "cryoten": 3.42,
+            "dem": 3.67,
+            "emr2": 3.0599999999999996,
+            "emr": 3.04,
+            "locscale*": 3.495,
+            "locscale": 3.55,
+            "locspiral": 3.94,
+            "average_maps": 4.12
+        },
+        "25%": {
+            "cryoten": 3.02,
+            "dem": 3.3075,
+            "emr2": 2.3125,
+            "emr": 2.2150000000000003,
+            "locscale*": 3.15,
+            "locscale": 3.1675,
+            "locspiral": 3.23,
+            "average_maps": 3.625
+        },
+        "75%": {
+            "cryoten": 4.2225,
+            "dem": 4.435,
+            "emr2": 4.05,
+            "emr": 3.94,
+            "locscale*": 4.28,
+            "locscale": 4.48,
+            "locspiral": 7.985,
+            "average_maps": 6.43
+        }
+    },
+    "d99_half_map1_masked_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.644274193548387
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.325
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.2775
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.112500000000001
+        }
+    },
+    "d99_half_map1_masked_not_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.593515625
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.275
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.265
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.0725
+        }
+    },
+    "d99_half_map1_unmasked_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.502661290322581
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.2
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 1.8250000000000002
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.6025
+        }
+    },
+    "d99_half_map1_unmasked_not_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.4781250000000004
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.1950000000000003
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 1.7875
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.5774999999999997
+        }
+    },
+    "d99_half_map2_masked_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.6499193548387097
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.34
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.2775
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.12
+        }
+    },
+    "d99_half_map2_masked_not_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.599765625
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.295
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.265
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.074999999999999
+        }
+    },
+    "d99_half_map2_unmasked_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.5036290322580648
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.205
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 1.8175000000000001
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.6025
+        }
+    },
+    "d99_half_map2_unmasked_not_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.4791406250000003
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.1950000000000003
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 1.7875
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.5774999999999997
+        }
+    },
+    "d_fsc_half_maps_masked_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.3936290322580644
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.205
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.8925
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.7925
+        }
+    },
+    "d_fsc_half_maps_masked_not_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.36578125
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.17
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 2.845
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.7075
+        }
+    },
+    "d_fsc_half_maps_unmasked_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.070483870967743
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.7300000000000004
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.3499999999999996
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.2725
+        }
+    },
+    "d_fsc_half_maps_unmasked_not_refine": {
+        "mean": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.036484375000001
+        },
+        "median": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.71
+        },
+        "25%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 3.32
+        },
+        "75%": {
+            "cryoten": NaN,
+            "dem": NaN,
+            "emr2": NaN,
+            "emr": NaN,
+            "locscale*": NaN,
+            "locscale": NaN,
+            "locspiral": NaN,
+            "average_maps": 4.255
+        }
+    },
+    "CC_mask_before_refine": {
+        "mean": {
+            "cryoten": 0.6436336,
+            "dem": 0.6186592000000001,
+            "emr2": 0.7089063999999999,
+            "emr": 0.691268,
+            "locscale*": 0.6779266129032256,
+            "locscale": 0.6310516129032259,
+            "locspiral": 0.6140169354838709,
+            "average_maps": 0.6049992
+        },
+        "median": {
+            "cryoten": 0.6715,
+            "dem": 0.6441,
+            "emr2": 0.7299,
+            "emr": 0.7124,
+            "locscale*": 0.69705,
+            "locscale": 0.6548,
+            "locspiral": 0.6263,
+            "average_maps": 0.6209
+        },
+        "25%": {
+            "cryoten": 0.5687,
+            "dem": 0.5729,
+            "emr2": 0.6486,
+            "emr": 0.6103,
+            "locscale*": 0.6194,
+            "locscale": 0.5613250000000001,
+            "locspiral": 0.5471,
+            "average_maps": 0.5467
+        },
+        "75%": {
+            "cryoten": 0.7507,
+            "dem": 0.6979,
+            "emr2": 0.7993,
+            "emr": 0.7931,
+            "locscale*": 0.755,
+            "locscale": 0.7273499999999999,
+            "locspiral": 0.7091999999999999,
+            "average_maps": 0.6857
+        }
+    },
+    "CC_mask_after_refine": {
+        "mean": {
+            "cryoten": 0.816779674796748,
+            "dem": 0.746493388429752,
+            "emr2": 0.8565699186991871,
+            "emr": 0.8546776,
+            "locscale*": 0.8115057377049181,
+            "locscale": 0.7564237288135595,
+            "locspiral": 0.6948663865546219,
+            "average_maps": 0.829416935483871
+        },
+        "median": {
+            "cryoten": 0.8302,
+            "dem": 0.7647,
+            "emr2": 0.8706,
+            "emr": 0.865,
+            "locscale*": 0.821,
+            "locscale": 0.7967500000000001,
+            "locspiral": 0.7202,
+            "average_maps": 0.83975
+        },
+        "25%": {
+            "cryoten": 0.78485,
+            "dem": 0.7167,
+            "emr2": 0.83385,
+            "emr": 0.8257,
+            "locscale*": 0.78245,
+            "locscale": 0.7112499999999999,
+            "locspiral": 0.6435,
+            "average_maps": 0.802975
+        },
+        "75%": {
+            "cryoten": 0.8632,
+            "dem": 0.7952,
+            "emr2": 0.8917999999999999,
+            "emr": 0.8973,
+            "locscale*": 0.856525,
+            "locscale": 0.840275,
+            "locspiral": 0.7687999999999999,
+            "average_maps": 0.8722749999999999
+        }
+    },
+    "moved_start_before_refine": {
+        "mean": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "median": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "25%": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "75%": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        }
+    },
+    "moved_start_after_refine": {
+        "mean": {
+            "cryoten": 0.4480178861788618,
+            "dem": 0.4189834710743801,
+            "emr2": 0.4594048780487805,
+            "emr": 0.4722536,
+            "locscale*": 0.4036811475409836,
+            "locscale": 0.4356762711864407,
+            "locspiral": 0.47595126050420167,
+            "average_maps": 0.38859354838709675
+        },
+        "median": {
+            "cryoten": 0.4006,
+            "dem": 0.3835,
+            "emr2": 0.4235,
+            "emr": 0.4246,
+            "locscale*": 0.36695,
+            "locscale": 0.39490000000000003,
+            "locspiral": 0.4409,
+            "average_maps": 0.35705
+        },
+        "25%": {
+            "cryoten": 0.32925,
+            "dem": 0.3029,
+            "emr2": 0.34185,
+            "emr": 0.3424,
+            "locscale*": 0.2727,
+            "locscale": 0.30232499999999995,
+            "locspiral": 0.34365,
+            "average_maps": 0.27035000000000003
+        },
+        "75%": {
+            "cryoten": 0.51755,
+            "dem": 0.4883,
+            "emr2": 0.51905,
+            "emr": 0.5322,
+            "locscale*": 0.49717500000000003,
+            "locscale": 0.5254,
+            "locspiral": 0.5283,
+            "average_maps": 0.457225
+        }
+    },
+    "clashscore_before_refine": {
+        "mean": {
+            "cryoten": 8.50784,
+            "dem": 8.508479999999999,
+            "emr2": 8.509120000000001,
+            "emr": 8.509360000000001,
+            "locscale*": 8.49991935483871,
+            "locscale": 8.496612903225806,
+            "locspiral": 8.466935483870966,
+            "average_maps": 8.51112
+        },
+        "median": {
+            "cryoten": 6.44,
+            "dem": 6.44,
+            "emr2": 6.44,
+            "emr": 6.43,
+            "locscale*": 6.42,
+            "locscale": 6.42,
+            "locspiral": 6.42,
+            "average_maps": 6.44
+        },
+        "25%": {
+            "cryoten": 4.3,
+            "dem": 4.3,
+            "emr2": 4.14,
+            "emr": 4.3,
+            "locscale*": 4.26,
+            "locscale": 4.26,
+            "locspiral": 4.26,
+            "average_maps": 4.3
+        },
+        "75%": {
+            "cryoten": 9.91,
+            "dem": 9.91,
+            "emr2": 9.91,
+            "emr": 9.91,
+            "locscale*": 9.915,
+            "locscale": 9.915,
+            "locspiral": 9.91,
+            "average_maps": 9.91
+        }
+    },
+    "clashscore_after_refine": {
+        "mean": {
+            "cryoten": 13.58869918699187,
+            "dem": 12.80099173553719,
+            "emr2": 12.462682926829267,
+            "emr": 12.575119999999998,
+            "locscale*": 12.38844262295082,
+            "locscale": 12.666864406779661,
+            "locspiral": 11.991764705882353,
+            "average_maps": 12.850161290322582
+        },
+        "median": {
+            "cryoten": 11.49,
+            "dem": 11.01,
+            "emr2": 10.05,
+            "emr": 9.73,
+            "locscale*": 10.115,
+            "locscale": 10.435,
+            "locspiral": 10.28,
+            "average_maps": 9.98
+        },
+        "25%": {
+            "cryoten": 7.455,
+            "dem": 7.39,
+            "emr2": 6.62,
+            "emr": 6.46,
+            "locscale*": 6.515,
+            "locscale": 7.4399999999999995,
+            "locspiral": 7.574999999999999,
+            "average_maps": 7.1475
+        },
+        "75%": {
+            "cryoten": 15.75,
+            "dem": 14.45,
+            "emr2": 14.475,
+            "emr": 14.94,
+            "locscale*": 13.69,
+            "locscale": 14.83,
+            "locspiral": 13.075,
+            "average_maps": 15.09
+        }
+    },
+    "ramachandran_outliers_before_refine": {
+        "mean": {
+            "cryoten": 0.09856000000000001,
+            "dem": 0.09856000000000001,
+            "emr2": 0.09856000000000001,
+            "emr": 0.09856000000000001,
+            "locscale*": 0.09935483870967741,
+            "locscale": 0.09935483870967741,
+            "locspiral": 0.09903225806451614,
+            "average_maps": 0.09856000000000001
+        },
+        "median": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "25%": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "75%": {
+            "cryoten": 0.08,
+            "dem": 0.08,
+            "emr2": 0.08,
+            "emr": 0.08,
+            "locscale*": 0.0825,
+            "locscale": 0.0825,
+            "locspiral": 0.0825,
+            "average_maps": 0.08
+        }
+    },
+    "ramachandran_outliers_after_refine": {
+        "mean": {
+            "cryoten": 0.042682926829268296,
+            "dem": 0.04644628099173554,
+            "emr2": 0.04414634146341464,
+            "emr": 0.050480000000000004,
+            "locscale*": 0.04360655737704918,
+            "locscale": 0.0488135593220339,
+            "locspiral": 0.04764705882352941,
+            "average_maps": 0.04540322580645162
+        },
+        "median": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "25%": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "75%": {
+            "cryoten": 0.01,
+            "dem": 0.04,
+            "emr2": 0.025,
+            "emr": 0.05,
+            "locscale*": 0.035,
+            "locscale": 0.045,
+            "locspiral": 0.03,
+            "average_maps": 0.03
+        }
+    },
+    "ramachandran_allowed_before_refine": {
+        "mean": {
+            "cryoten": 4.49136,
+            "dem": 4.490799999999999,
+            "emr2": 4.49104,
+            "emr": 4.49096,
+            "locscale*": 4.470161290322581,
+            "locscale": 4.470483870967742,
+            "locspiral": 4.487580645161291,
+            "average_maps": 4.490639999999999
+        },
+        "median": {
+            "cryoten": 3.87,
+            "dem": 3.87,
+            "emr2": 3.87,
+            "emr": 3.87,
+            "locscale*": 3.8600000000000003,
+            "locscale": 3.8600000000000003,
+            "locspiral": 3.8600000000000003,
+            "average_maps": 3.87
+        },
+        "25%": {
+            "cryoten": 2.69,
+            "dem": 2.68,
+            "emr2": 2.68,
+            "emr": 2.68,
+            "locscale*": 2.6775,
+            "locscale": 2.6775,
+            "locspiral": 2.625,
+            "average_maps": 2.68
+        },
+        "75%": {
+            "cryoten": 5.64,
+            "dem": 5.64,
+            "emr2": 5.64,
+            "emr": 5.64,
+            "locscale*": 5.64,
+            "locscale": 5.64,
+            "locspiral": 5.66,
+            "average_maps": 5.64
+        }
+    },
+    "ramachandran_allowed_after_refine": {
+        "mean": {
+            "cryoten": 4.550406504065041,
+            "dem": 4.278925619834711,
+            "emr2": 4.348780487804878,
+            "emr": 4.304399999999999,
+            "locscale*": 4.1855737704918035,
+            "locscale": 4.36271186440678,
+            "locspiral": 4.756806722689075,
+            "average_maps": 4.256451612903225
+        },
+        "median": {
+            "cryoten": 4.4,
+            "dem": 3.77,
+            "emr2": 3.85,
+            "emr": 3.94,
+            "locscale*": 3.88,
+            "locscale": 3.71,
+            "locspiral": 4.27,
+            "average_maps": 3.75
+        },
+        "25%": {
+            "cryoten": 2.41,
+            "dem": 2.55,
+            "emr2": 2.495,
+            "emr": 2.47,
+            "locscale*": 2.3725,
+            "locscale": 2.5100000000000002,
+            "locspiral": 2.685,
+            "average_maps": 2.3449999999999998
+        },
+        "75%": {
+            "cryoten": 5.6850000000000005,
+            "dem": 5.58,
+            "emr2": 5.5649999999999995,
+            "emr": 5.47,
+            "locscale*": 5.465,
+            "locscale": 6.025,
+            "locspiral": 6.1850000000000005,
+            "average_maps": 5.7925
+        }
+    },
+    "ramachandran_favored_before_refine": {
+        "mean": {
+            "cryoten": 93.00984,
+            "dem": 93.01032,
+            "emr2": 93.01007999999999,
+            "emr": 93.01015999999998,
+            "locscale*": 93.01088709677418,
+            "locscale": 93.01056451612902,
+            "locspiral": 92.99379032258064,
+            "average_maps": 93.01039999999999
+        },
+        "median": {
+            "cryoten": 95.95,
+            "dem": 95.95,
+            "emr2": 95.95,
+            "emr": 95.95,
+            "locscale*": 95.955,
+            "locscale": 95.955,
+            "locspiral": 95.955,
+            "average_maps": 95.95
+        },
+        "25%": {
+            "cryoten": 93.87,
+            "dem": 93.87,
+            "emr2": 93.87,
+            "emr": 93.87,
+            "locscale*": 93.89250000000001,
+            "locscale": 93.89250000000001,
+            "locspiral": 93.86250000000001,
+            "average_maps": 93.87
+        },
+        "75%": {
+            "cryoten": 97.17,
+            "dem": 97.17,
+            "emr2": 97.17,
+            "emr": 97.17,
+            "locscale*": 97.1825,
+            "locscale": 97.1825,
+            "locspiral": 97.20750000000001,
+            "average_maps": 97.17
+        }
+    },
+    "ramachandran_favored_after_refine": {
+        "mean": {
+            "cryoten": 92.96804878048782,
+            "dem": 93.19528925619834,
+            "emr2": 93.16772357723578,
+            "emr": 93.24503999999999,
+            "locscale*": 93.31155737704917,
+            "locscale": 93.04618644067796,
+            "locspiral": 92.6746218487395,
+            "average_maps": 93.27870967741937
+        },
+        "median": {
+            "cryoten": 95.53,
+            "dem": 96.15,
+            "emr2": 95.93,
+            "emr": 95.93,
+            "locscale*": 96.025,
+            "locscale": 96.065,
+            "locspiral": 95.64,
+            "average_maps": 96.205
+        },
+        "25%": {
+            "cryoten": 94.015,
+            "dem": 94.3,
+            "emr2": 94.33,
+            "emr": 94.36,
+            "locscale*": 94.33,
+            "locscale": 93.8,
+            "locspiral": 93.36,
+            "average_maps": 93.8625
+        },
+        "75%": {
+            "cryoten": 97.16499999999999,
+            "dem": 97.35,
+            "emr2": 97.17,
+            "emr": 97.45,
+            "locscale*": 97.3425,
+            "locscale": 97.34,
+            "locspiral": 97.07,
+            "average_maps": 97.545
+        }
+    },
+    "rotamer_outliers_before_refine": {
+        "mean": {
+            "cryoten": 1.0556,
+            "dem": 1.0513599999999999,
+            "emr2": 1.0528,
+            "emr": 1.05176,
+            "locscale*": 1.0576612903225806,
+            "locscale": 1.0599193548387098,
+            "locspiral": 1.0554838709677419,
+            "average_maps": 1.05304
+        },
+        "median": {
+            "cryoten": 0.34,
+            "dem": 0.34,
+            "emr2": 0.34,
+            "emr": 0.34,
+            "locscale*": 0.345,
+            "locscale": 0.345,
+            "locspiral": 0.33,
+            "average_maps": 0.34
+        },
+        "25%": {
+            "cryoten": 0.0,
+            "dem": 0.0,
+            "emr2": 0.0,
+            "emr": 0.0,
+            "locscale*": 0.0,
+            "locscale": 0.0,
+            "locspiral": 0.0,
+            "average_maps": 0.0
+        },
+        "75%": {
+            "cryoten": 1.25,
+            "dem": 1.25,
+            "emr2": 1.25,
+            "emr": 1.25,
+            "locscale*": 1.2974999999999999,
+            "locscale": 1.2974999999999999,
+            "locspiral": 1.2974999999999999,
+            "average_maps": 1.25
+        }
+    },
+    "rotamer_outliers_after_refine": {
+        "mean": {
+            "cryoten": 1.4778048780487805,
+            "dem": 1.7566942148760332,
+            "emr2": 1.4031707317073168,
+            "emr": 1.33888,
+            "locscale*": 1.6336065573770493,
+            "locscale": 1.7377118644067797,
+            "locspiral": 2.1497478991596637,
+            "average_maps": 1.1087903225806452
+        },
+        "median": {
+            "cryoten": 1.42,
+            "dem": 1.7,
+            "emr2": 1.31,
+            "emr": 1.23,
+            "locscale*": 1.55,
+            "locscale": 1.74,
+            "locspiral": 2.14,
+            "average_maps": 0.94
+        },
+        "25%": {
+            "cryoten": 0.795,
+            "dem": 1.01,
+            "emr2": 0.67,
+            "emr": 0.64,
+            "locscale*": 0.7075,
+            "locscale": 0.7825,
+            "locspiral": 1.3399999999999999,
+            "average_maps": 0.3275
+        },
+        "75%": {
+            "cryoten": 2.165,
+            "dem": 2.36,
+            "emr2": 2.0149999999999997,
+            "emr": 1.85,
+            "locscale*": 2.18,
+            "locscale": 2.29,
+            "locspiral": 2.92,
+            "average_maps": 1.75
+        }
+    },
+    "rotamer_allowed_before_refine": {
+        "mean": {
+            "cryoten": 8.41792,
+            "dem": 8.41552,
+            "emr2": 8.41704,
+            "emr": 8.414480000000001,
+            "locscale*": 8.439596774193548,
+            "locscale": 8.44225806451613,
+            "locspiral": 8.475241935483872,
+            "average_maps": 8.418560000000001
+        },
+        "median": {
+            "cryoten": 4.95,
+            "dem": 4.95,
+            "emr2": 4.95,
+            "emr": 4.95,
+            "locscale*": 4.9,
+            "locscale": 4.9,
+            "locspiral": 5.09,
+            "average_maps": 4.95
+        },
+        "25%": {
+            "cryoten": 0.95,
+            "dem": 0.95,
+            "emr2": 0.95,
+            "emr": 0.95,
+            "locscale*": 0.9425,
+            "locscale": 0.945,
+            "locspiral": 0.945,
+            "average_maps": 0.95
+        },
+        "75%": {
+            "cryoten": 13.09,
+            "dem": 13.09,
+            "emr2": 13.09,
+            "emr": 13.09,
+            "locscale*": 13.1175,
+            "locscale": 13.1175,
+            "locspiral": 13.1175,
+            "average_maps": 13.09
+        }
+    },
+    "rotamer_allowed_after_refine": {
+        "mean": {
+            "cryoten": 16.97040650406504,
+            "dem": 19.881157024793392,
+            "emr2": 16.234227642276423,
+            "emr": 16.313200000000002,
+            "locscale*": 16.2,
+            "locscale": 16.707033898305085,
+            "locspiral": 17.18016806722689,
+            "average_maps": 14.394354838709676
+        },
+        "median": {
+            "cryoten": 17.83,
+            "dem": 21.4,
+            "emr2": 16.56,
+            "emr": 17.0,
+            "locscale*": 17.365000000000002,
+            "locscale": 17.75,
+            "locspiral": 18.69,
+            "average_maps": 14.629999999999999
+        },
+        "25%": {
+            "cryoten": 11.92,
+            "dem": 15.55,
+            "emr2": 10.655000000000001,
+            "emr": 10.23,
+            "locscale*": 10.575,
+            "locscale": 11.06,
+            "locspiral": 13.9,
+            "average_maps": 7.37
+        },
+        "75%": {
+            "cryoten": 23.515,
+            "dem": 26.61,
+            "emr2": 22.39,
+            "emr": 22.51,
+            "locscale*": 22.29,
+            "locscale": 23.48,
+            "locspiral": 23.175,
+            "average_maps": 21.4
+        }
+    },
+    "rotamer_favored_before_refine": {
+        "mean": {
+            "cryoten": 88.12648,
+            "dem": 88.13311999999999,
+            "emr2": 88.13032,
+            "emr": 88.13376,
+            "locscale*": 88.08322580645161,
+            "locscale": 88.07846774193548,
+            "locspiral": 88.04975806451611,
+            "average_maps": 88.12831999999997
+        },
+        "median": {
+            "cryoten": 93.88,
+            "dem": 93.88,
+            "emr2": 93.88,
+            "emr": 93.88,
+            "locscale*": 93.88,
+            "locscale": 93.88,
+            "locspiral": 93.88,
+            "average_maps": 93.88
+        },
+        "25%": {
+            "cryoten": 83.38,
+            "dem": 83.38,
+            "emr2": 83.38,
+            "emr": 83.38,
+            "locscale*": 83.32499999999999,
+            "locscale": 83.32499999999999,
+            "locspiral": 83.32499999999999,
+            "average_maps": 83.38
+        },
+        "75%": {
+            "cryoten": 98.49,
+            "dem": 98.54,
+            "emr2": 98.54,
+            "emr": 98.49,
+            "locscale*": 98.56,
+            "locscale": 98.56,
+            "locspiral": 98.5025,
+            "average_maps": 98.49
+        }
+    },
+    "rotamer_favored_after_refine": {
+        "mean": {
+            "cryoten": 79.11235772357723,
+            "dem": 75.88231404958678,
+            "emr2": 79.92373983739839,
+            "emr": 79.94776,
+            "locscale*": 79.70729508196722,
+            "locscale": 79.01288135593221,
+            "locspiral": 78.14882352941176,
+            "average_maps": 82.07758064516129
+        },
+        "median": {
+            "cryoten": 80.15,
+            "dem": 76.26,
+            "emr2": 81.19,
+            "emr": 81.62,
+            "locscale*": 80.465,
+            "locscale": 79.995,
+            "locspiral": 77.78,
+            "average_maps": 84.07
+        },
+        "25%": {
+            "cryoten": 73.5,
+            "dem": 70.18,
+            "emr2": 76.035,
+            "emr": 75.15,
+            "locscale*": 74.235,
+            "locscale": 73.44749999999999,
+            "locspiral": 73.685,
+            "average_maps": 75.66499999999999
+        },
+        "75%": {
+            "cryoten": 86.17,
+            "dem": 80.94,
+            "emr2": 87.445,
+            "emr": 88.23,
+            "locscale*": 87.1775,
+            "locscale": 86.17750000000001,
+            "locspiral": 83.565,
+            "average_maps": 91.5525
+        }
+    }
+}
