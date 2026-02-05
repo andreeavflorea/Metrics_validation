@@ -11,8 +11,8 @@ output_directory_locspiral = '/media/andreea/DATA1/dem2_data_andreea/locspiral'
 output_directory_other = ''
 
 extra_directory = '/media/andreea/DATA1/extra_metrics'
-json_file_path = '/media/andreea/DATA1/dem2_data_andreea/codes/otros/train_val_test_split.json'   
-#sep2024_train_val_test_split
+json_file_path = '/media/andreea/DATA1/dem2_data_andreea/codes/script_metrics/sep2024_train_val_test_split.json'   
+
 
 code_py_path = '/media/andreea/DATA1/dem2_data_andreea/codes/script_metrics'
 
