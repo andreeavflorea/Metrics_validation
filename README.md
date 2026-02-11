@@ -10,7 +10,7 @@ The full dataset described in this work is publicly available on Harvard Dataver
 - [Dataverse 1](https://dataverse.harvard.edu/dataverse/curated_dataset_cryoEM_map_postprocessing_info)
 - [Dataverse 2](https://dataverse.harvard.edu/dataverse/curated_dataset_cryoEM_postprocessing_methods_metrics)
 
-Additionally, the following DOI corresponds to the informational dataset, which details the organization and content of each dataset, provides complementary usage notes, and includes links to each dataset across the two Dataverse deposits listed above. Please refer to the description section of this dataset for full details: [10.7910/DVN/YI79GU](https://doi.org/10.7910/DVN/YI79GU)
+Additionally, the following DOI corresponds to the informational dataset, which details the organization and content of each dataset, provides complementary notes, and includes links to each dataset across the two Dataverse deposits listed above. Please refer to the description section of this dataset for full details: [10.7910/DVN/YI79GU](https://doi.org/10.7910/DVN/YI79GU)
 
 
 ## Data Organization
@@ -108,18 +108,23 @@ Following these conventions ensures *`maps_metrics_files.py`* and other scripts 
 
 ### 2. Evaluation workflow and scripts → *`code_py_path`*
 All Python scripts used to generate post-processing maps, compute evaluation metrics, reproduce the workflow, and visualize results are located here. This directory includes:
-- The **train/validation/test split JSON**, defining the non-overlapping subsets used for benchmarking. SI ES COMO EN MI LOCAL SI, SINO NO
+- The **train/validation/test split JSON**, defining the non-overlapping subsets used for benchmarking. 
 - The full **metric computation pipeline**, including post-processing map generation, metric calculation, extraction, and statistical visualization (boxplots and summary statistics).
   
 Researchers can reuse these scripts to evaluate their own methods under the same conditions.
 
 <pre>
 ├── code_py_path/
-    ├── maps_metrics_files.py                # python script for metric computation
-    ├── parser_def.py                        # aggregate metrics into a CSV file
-	├── box_plot_stats.py					 # generates boxplots and summary statistics
-    ├── sept2024_train_val_test_split.json   # JSON file defining dataset split 
-    └── routes.txt   						 # defined routes
+    ├── maps_metrics_files.py                	# python script for metric computation
+    ├── parser_def.py                        	# aggregate metrics into a CSV file
+	├── box_plot_stats.py					 	# generates boxplots and summary statistics
+	├── qscore_residue.py					 	# generates qscore per residue plots
+	├── locscale_corrected.py				 	# auxiliary file to obtain locscale- maps  
+	├── locspiral.py						 	# auxiliary file to obtain locspiral maps
+    ├── sept2024_train_val_test_split.json   	# JSON file defining dataset split 
+	├── train_val_test_split_emready.ods	 	# EMReady split
+	├── dataset_cryoten.csv					 	# cryoTEN split
+    └── routes.txt   						 	# defined routes
 </pre>
 
 
@@ -132,10 +137,12 @@ To keep the main output directory clean and easy to navigate, all auxiliary file
 
 <pre>
 ├── output_directory/
-│   ├── phenix_metrics            # Phenix-derived evaluation metrics
-│   └── qscore_metrics            # Q-score results
-├── all_metrics_test_paper.csv    # CSV containing the metrics
-└── extra_directory/
+│   ├── phenix_metrics            			# Phenix-derived evaluation metrics
+│   └── qscore_metrics            			# Q-score results
+├── all_metrics_test_paper.csv    			# CSV containing the metrics
+└── stats_complete_non_matches.json    		# JSON file containing all statistics 
+	
+├── extra_directory/
     ├── phenix_intermediates
     └── qscore_intermediates
 </pre>
@@ -246,7 +253,7 @@ Before running the script, your directory tree must follow the structure describ
     └── pdbs/
 </pre>
 
-Each entry must follow the naming conventions described earlier, and the metadata JSON for each map must be available under: *root_directory/info/*
+Each entry must follow the naming conventions described earlier, and the metadata JSON for each map must be available under: *`root_directory/info/`*
 
 **About routes.txt**
 
@@ -278,7 +285,7 @@ Below you can find a description of all available flags.
 |`-nw`| Number of workers (parallel processes) used for metric computation. Default: 5.|
 
 
-**Important:** when running the script in ‘not refine’ mode (`*refine* = False`), -nw must be set to 1 due to Phenix parallelization conflicts.
+**Important:** when running the script in ‘not refine’ mode (`*refine* = False`), `-nw` must be set to 1 due to Phenix parallelization conflicts.
 
 **Example of use:**
 - Refine:
@@ -295,7 +302,7 @@ python maps_metrics_files.py -m emr2 --refine -nw 6 -p /path/to/routes.txt
 The evaluation pipeline relies on a JSON file that defines the dataset partitions (train, val, and test). The path to this JSON file must be specified inside *`routes.txt`*, using the entry:
 
 <pre>
-json_file_path = /path/to/partitions.json
+json_file_path = /path/to/sep2024_train_val_test_split.json
 </pre>
 
 This JSON file contains the list of maps included in each split, and the script *`maps_metrics_files.py`*, by default, uses the test partition to compute the Phenix and Q-score metrics.
@@ -322,7 +329,7 @@ In addition, the auxiliary file generated by *`phenix.real_space_refine`* should
 ## CSV generation script
 *`parser_def.py`*
 
-The parser_def.py script, located in /code_py_path/, is responsible for consolidating all metrics computed by *`maps_metrics_files.py`* into a single CSV file. It collects metric files from the corresponding *`output_directory`* and combines them into a structurable table for easier analysis and comparison.
+The parser_def.py script, located in `/code_py_path/`, is responsible for consolidating all metrics computed by *`maps_metrics_files.py`* into a single CSV file. It collects metric files from the corresponding *`output_directory`* and combines them into a structurable table for easier analysis and comparison.
 
 ### Running the script
 
@@ -367,7 +374,8 @@ It accepts the following command-line arguments.
 |`--mode`| Metric filtering mode. Possible values are: <br>&nbsp;&nbsp; - **all:** generate plots using the full test set (by default). <br>&nbsp;&nbsp; - **matches:** only entries that appear in training or validation sets of CryoTEN and EMReady. <br>&nbsp;&nbsp; - **non_matches:** entries not included in the training or validation sets of CryoTEN and EMReady.|
 
 
-**Note:** using matches or non_matches you will need to provide the CSV files defining the CryoTEN and EMReady partitions, as well as the JSON file defining the train/validation/test split used in this work. Inside the script you will find two clearly marked comments indicating where the paths to these files must be updated:
+**Note:** when using `matches` or `non_matches`, you will need to provide the CSV or ODS files defining the CryoTEN and EMReady partitions, as well as the JSON file defining the train/validation/test split used in this work. Specifically, the required files are `data_cryoten.csv` (CryoTEN partition), and `train_val_test_split_emready.ods`(EMReady partition), as described in the repository *Data Organization* section. 
+Within the script, two clearly marked comments indicate where the paths to these files must be updated:
 
 <pre>
 # >>> USER: update the path to the CryoTEN and EMReady partition CSV files
@@ -377,7 +385,7 @@ It accepts the following command-line arguments.
 **Example of use:**
 
 <pre>
-python3 box_plot_stats.py --file_path /path/to/all_metrics_test_paper.csv --output_dir /path/to/plots_dir/  --stats_file stats_complete.json --mode non_matches
+python3 box_plot_stats.py --file_path /path/to/all_metrics_test_paper.csv --output_dir /path/to/plots_dir/  --stats_file stats_complete_non_matches.json --mode non_matches
 </pre>
 
 **Additional notes:**
