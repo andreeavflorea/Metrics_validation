@@ -139,6 +139,14 @@ def extract_map_method(filename):
     method_match = re.search(r'_(dem1|cryoten|locscale-|locscale|locspiral|emr|emr2)[._]', filename)
     method = method_match.group(1) if method_match else "average_map"
 
+    # Dictionary for renaming methods
+    method_rename = {
+        "dem1": "dem",
+        "locscale-": "locscale*"
+    }
+    # Replace method name if it's in the dictionary
+    method = method_rename.get(method, method)
+
     return emd_map, method
 
 

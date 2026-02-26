@@ -76,8 +76,6 @@ def generate_sets():
     # -------- 1. Test set (Seneca) ----------------
     # >>> USER: update the path to the JSON file defining the dataset splits
     routes_seneca = [
-        #'/media/andreea/DATA1/dem2_data_andreea/half0_train_val_test.json',
-        #'/media/andreea/DATA1/dem2_data_andreea/half1_train_val_test.json'
         "/media/andreea/DATA1/dem2_data_andreea/sep2024_train_val_test_split.json"
     ]
 

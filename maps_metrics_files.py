@@ -127,7 +127,7 @@ def find_files(root_directory: str, json_file_path: str) -> Dict[str, List[str]]
     with open(json_file_path, "r", encoding="utf-8") as json_file:
         loaded_data = json.load(json_file)
         # >>> USER: change 'test' here if you want to process a different split
-        test_values: List[str] = loaded_data["prueba_locscale"]
+        test_values: List[str] = loaded_data["test"]
 
     print(f"\nData read from {os.path.basename(json_file_path)}:")
     print(len(test_values))
