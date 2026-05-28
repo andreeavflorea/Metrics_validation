@@ -171,30 +171,112 @@ def plot(df, q_peak, q_low, q_high, resolution):
         None
     """
 
+    # Extract EMDB map ID and processing method from archive filename
     emd_map, method = extract_map_method(os.path.basename(archive))
-    plt.figure(figsize=(10, 6))
-    plt.scatter(df['ResNum'], df['Q_SideChain'], s=10, color='orange', label='Q_SideChain')
-    plt.scatter(df['ResNum'], df['Q_BackBone'], s=10, color='deepskyblue', label='Q_BackBone')
 
-    plt.axhline(y=q_peak, color='black', linestyle='-', label=f'Q_Peak @{resolution:.2f}Å')
-    plt.axhline(y=q_low, color='black', linestyle='--', dashes=(2,2), label=f'Q_Low_95%@{resolution:.2f}Å')
-    plt.axhline(y=q_high, color='black', linestyle='--', dashes=(4,4), label=f'Q_High_95%@{resolution:.2f}Å')
+    # Create figure and axis
+    fig, ax = plt.subplots(figsize=(10, 6))
 
-    plt.xlabel('Amino acid residue #')
-    plt.ylabel('Q-score')
-    plt.title(f'Q-score per residue {method}')
-    plt.legend()
-    plt.tight_layout()
+    ax.scatter(df['ResNum'], df['Q_SideChain'], s=10, color='orange', label='Q_SideChain')
+    ax.scatter(df['ResNum'], df['Q_BackBone'], s=10, color='deepskyblue', label='Q_BackBone')
 
-    filename = f"{emd_map}_{method}{'_not_refine' if args.not_refine else ''}.tiff"
-    #filename = f"{emd_map}_{method}.tiff"
-    plt.savefig(os.path.join(output_directory, filename), dpi=300, bbox_inches="tight")
+    ax.axhline(y=q_peak, color='black', linestyle='-', label=f'Q_Peak @{resolution:.2f}Å')
+    ax.axhline(y=q_low, color='black', linestyle='--', dashes=(2,2), label=f'Q_Low_95%@{resolution:.2f}Å')
+    ax.axhline(y=q_high, color='black', linestyle='--', dashes=(4,4), label=f'Q_High_95%@{resolution:.2f}Å')
+
+    # Axis labels
+    ax.set_xlabel('Amino acid residue #', fontsize=20)
+    ax.set_ylabel('Q-score', fontsize=20)
+    title_suffix = "not_refine" if args.not_refine else ""
+    ax.set_title(f'Q-score per residue {method} {title_suffix}', fontsize=28)
+
+    ax.tick_params(axis='x', labelsize=20)
+    ax.tick_params(axis='y', labelsize=20)
+
+    # Extract legend elements and save separately
+    handles, labels = ax.get_legend_handles_labels()
+    save_auto_legend(handles, labels, emd_map)
+
+    fig.tight_layout()
+
+    # Save figure
+    suffix = "_not_refine" if args.not_refine else ""
+    filename = f"{emd_map}_{method}{suffix}.tiff"
+    fig.savefig(os.path.join(output_directory, filename), dpi=300, bbox_inches="tight")
     plt.show()
+
+
+def save_auto_legend(handles, labels, emd_map):
+    """
+        Generate and save a standalone legend figure for Q-score plots.
+
+        This function creates a separate figure containing only the legend
+        corresponding to a plot (typically generated in `plot`). The legend
+        is saved as a TIFF file to avoid cluttering the main plot and to allow
+        flexible reuse in publications or figure layouts.
+
+        If a legend file for the given EMDB map already exists, the function
+        skips regeneration.
+
+        Notes:
+            - This function depends on external/global variables:
+                * `args.not_refine`: flag to modify filename
+                * `output_directory`: directory where the legend is saved
+            - Intended to be used with matplotlib handles and labels extracted
+              from an existing plot.
+
+        Args:
+            handles (list):
+                List of matplotlib artist handles (e.g., from ax.get_legend_handles_labels()).
+
+            labels (list):
+                List of corresponding labels for the legend entries.
+
+            emd_map (str):
+                EMDB map identifier used to construct the output filename.
+
+        Returns:
+            None
+        """
+
+    # Define filename suffix based on refinement flag
+    suffix = "_not_refine" if args.not_refine else ""
+    filename = f"legend_{emd_map}{suffix}.tiff"
+    filepath = os.path.join(output_directory, filename)
+
+    # Avoid regenerating legend if it already exists
+    if os.path.exists(filepath):
+        print(f"Legend already exists for {emd_map}, skipping...")
+        return
+
+    # Create a small figure dedicated to the legend
+    fig_legend = plt.figure(figsize=(6, 1))
+
+    # Add an empty axis (needed to host the legend)
+    ax_leg = fig_legend.add_subplot(111)
+    ax_leg.axis('off')
+
+    # Create legend centered in the figure
+    fig_legend.legend(
+        handles,
+        labels,
+        loc='center',
+        ncol=5,                 # Arrange legend entries in columns
+        frameon=False,          # Remove legend border
+        fontsize=12
+    )
+
+    # Save legend as a high-resolution TIFF image
+    fig_legend.savefig(
+        filepath,
+        dpi=300,
+        bbox_inches='tight'
+    )
 
 
 archive = args.archive
 output_directory = args.output_dir
-os.makedirs(output_directory, exist_ok=True)  # Create folder if it doesn't exist
+os.makedirs(output_directory, exist_ok=True)  # Create folder if it does not exist
 
 df, q_peak, q_low, q_high, res = process_file(archive)
 plot(df, q_peak, q_low, q_high, res)
